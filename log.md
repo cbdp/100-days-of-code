@@ -32,6 +32,8 @@
 
 **Code**:
 ```
+/* Puzzle: assert.strictEqual(hydrate("1 shot, 5 beers, 2 shots, 1 glass of wine, 1 beer"), "10 glasses of water"); */
+
 function hydrate(str) {
   let regEx = str.match(/\d/g);
   let array = [];
@@ -55,6 +57,8 @@ for (let i = 0; i < regEx.length; i++) {
 ````
 and 
 ```
+/* Puzzle: Test.assertEquals(findShort("bitcoin take over the world maybe who knows perhaps"), 3); */
+
 function findShort(s) {
   let array = (s.split(' '));
   let sortedArray = array.sort((a, b) => a.length - b.length);
@@ -64,3 +68,41 @@ function findShort(s) {
 **Notes**: with hydrate(str) I had problems figuring out regular expressions, but a bit of googling and reading got me through it, until I realised I was returning numbers as strings in my array, so I went to MDN and looked for a way to reverse the process. The result was parseInt() and, since I needed to turn everything back to a string for the puzzle to complete, I also grabbed .toString. Another interesting method was .match, which worked like a charm. 
 
 With findShort(s), I felt much more confident and completed it rather quicker than expected. I will continue to do a few puzzles, but am also actively considering what could be a good project. Codewars is great, but many of the puzzles are math based, which can be a drag.
+
+### Day 5: April 11, 2020
+#### 2 hours
+##### JS: Regular Expressions, .replace, .trim, .reverse, .join, .split
+
+**Today's Progress**: Still trying to get back into the swing of things with some js puzzles.
+
+**Code**:
+```
+/* Puzzle: Test.assertEquals(songDecoder("AWUBWUBWUBBWUBWUBWUBC"), "A B C","multiples WUB should be replaced by only 1 space"); */
+
+function songDecoder(song) {
+  const patternDub = /WUB/g;
+  const patternSpace = /\s+/g;
+
+return song.replace(patternDub, ' ').replace(patternSpace, ' ').trim();
+};
+```
+and
+```
+/* Puzzle: Write a function that takes in a string of one or more words,
+and returns the same string, but with all five or more letter words reversed */
+
+function spinWords(s){
+  let array = (s.split(' '));
+  
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].length > 4) {
+      let backwards = array[i].split('').reverse().join('');    
+      array[i] = backwards;
+    };
+  };
+  
+  return array.join(' ');
+};
+```
+**Notes**: Started adding short descriptions of the puzzles on top. I'd like to be able to better refactor my solutions, which are also seemingly depending a lot on learning new methods. Maybe I should do a Freecodecamp.org course instead? From another js course I completed last year, I remember thinking it was nice, gave some basic knowledge etc., but when it came down to it, the course simply didn't help me with quite a lot of real world problems. Hmm.
+
