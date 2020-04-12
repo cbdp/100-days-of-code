@@ -113,3 +113,5 @@ function spinWords(s){
 **Today's Progress**: Basic Javascript 40/110
 
 **Notes**: Decided to go for a certification, so far the basic Javascript is a bit of a slog to do, but I guess it can't hurt to redo the basics. It's easter lunch here, so could only do the one hour.
+
+**PS**: Spent another thirty minutes with git.
