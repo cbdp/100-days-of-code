@@ -115,3 +115,94 @@ function spinWords(s){
 **Notes**: Decided to go for a certification, so far the basic Javascript is a bit of a slog to do, but I guess it can't hurt to redo the basics. It's easter lunch here, so could only do the one hour.
 
 **PS**: Spent another thirty minutes with git.
+
+
+### Day 7: April 12, 2020
+#### 2 hours
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Javascript 79/110
+
+**Notes**: When I said the Basic JS was a bit of a slog, here's an example of how mindnumbing it gets
+
+**Code**:
+```
+var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if (strokes === 1) {
+      return names[0];
+  } else if (strokes <= par - 2) {
+      return names[1];
+  } else if (strokes == par - 1) {
+      return names[2];
+  } else if (strokes == par) {
+      return names[3];
+  } else if (strokes == par + 1) {
+      return names[4];
+  } else if (strokes == par + 2) {
+      return names[5];
+  } else if (strokes >= par + 3) {
+      return names[6];
+  };
+  return "Change Me";
+  // Only change code above this line
+};
+
+golfScore(5, 4);
+```
+and 
+```
+function sequentialSizes(val) {
+  var answer = "";
+  // Only change code below this line
+  switch(val) {
+    case 1:
+    case 2:
+    case 3:
+      return "Low";
+    case 4:
+    case 5:
+    case 6:
+      return "Mid";
+    case 7:
+    case 8:
+    case 9:
+      return "High";
+  };
+
+  // Only change code above this line
+  return answer;
+};
+
+sequentialSizes(1);
+```
+and of course it got a little more exciting the minute I complained on here with a card counter
+```
+var count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  if (card <= 6) {
+    count++;
+  } else if (card >= 7 && card <= 9) {
+    count = count + 0;
+  } else if (card === 10) {
+    count--;
+  } else if (card === 'J' || card === 'Q' || card === 'K' || card === 'A') {
+    count--;
+  } else {
+    return "Change Me";
+  };
+
+  if (count >= 1) {
+    return count + " Bet"
+  } else {
+    return count + " Hold"
+  };
+  // Only change code above this line
+};
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+````
+**Notes continued**: Last one was kinda fun tho. Hope there are more like that in the future, much more puzzle like and a lot less rote. 
