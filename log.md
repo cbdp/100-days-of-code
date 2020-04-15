@@ -106,7 +106,7 @@ function spinWords(s){
 ```
 **Notes**: Started adding short descriptions of the puzzles on top. I'd like to be able to better refactor my solutions, which are also seemingly depending a lot on learning new methods. Maybe I should do a Freecodecamp.org course instead? From another js course I completed last year, I remember thinking it was nice, gave some basic knowledge etc., but when it came down to it, the course simply didn't help me with quite a lot of real world problems. Hmm.
 
-### Day 6: April 11, 2020
+### Day 6: April 12, 2020
 #### 1 hour
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
@@ -117,7 +117,7 @@ function spinWords(s){
 **PS**: Spent another thirty minutes with git.
 
 
-### Day 7: April 12, 2020
+### Day 7: April 13, 2020
 #### 2 hours
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
@@ -208,10 +208,19 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 **Notes continued**: Last one was kinda fun tho. Hope there are more like that in the future, much more puzzle like and a lot less rote. 
 
 
-### Day 8: April 13, 2020
+### Day 8: April 14, 2020
 #### 1 hour
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp + adding html lang attribute to differentiate 3 gatsby sites
 
 **Today's Progress**: Basic Javascript 88/110
 
 **Notes**: Still on the Basic JS Section. Suddenly realised I needed to declare html lang to help differentiate between the 3 gatsby sites I'm working on, so I'll be looking into how to best implement this. Also started adding some of my freecodecamp solutions here to help fuel my sense of progress.
+
+
+### Day 9: April 15, 2020
+#### 1 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Javascript 92/110
+
+**Notes**: Spent waay too long on a JSON record updating question thing. Added it to the fcc solutions folder.
