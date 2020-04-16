@@ -224,3 +224,11 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 **Today's Progress**: Basic Javascript 92/110
 
 **Notes**: Spent waay too long on a JSON record updating question thing. Added it to the fcc solutions folder.
+
+### Day 10: April 16, 2020
+#### 1 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Javascript 100/110
+
+**Notes**: GD recursion.
