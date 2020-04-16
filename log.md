@@ -231,4 +231,4 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 
 **Today's Progress**: Basic Javascript 100/110
 
-**Notes**: GD recursion.
+**Notes**: GD recursion...
