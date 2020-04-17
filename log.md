@@ -218,7 +218,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 
 
 ### Day 9: April 15, 2020
-#### 1 hour
+#### 1.5 hour
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
 **Today's Progress**: Basic Javascript 92/110
@@ -232,3 +232,12 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 **Today's Progress**: Basic Javascript 100/110
 
 **Notes**: GD recursion...
+
+
+### Day 11: April 17, 2020
+#### 1.5 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Javascript 100/110
+
+**Notes**: Got my head around searching an array without the benefits of multiple methods. Added this and some older fcc exercises in the fcc folder. Also spent a while with zshrc and homebrew.
