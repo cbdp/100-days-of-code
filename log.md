@@ -241,3 +241,18 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 **Today's Progress**: Basic Javascript 100/110
 
 **Notes**: Got my head around searching an array without the benefits of multiple methods. Added this and some older fcc exercises in the fcc folder. Also spent a while with zshrc and homebrew.
+
+
+### Day 12: April 18, 2020
+#### 1 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Javascript 108/110
+
+**Notes**: Did a few exercises, helped a friend and played around with zsh. FCC let's me download my code, but always sends the file as a .txt. This annoyed me, because I'd have to change the extension on every file I got from there. So I used homebrew to install rename and then added this alias:
+```
+alias tojs="rename 's/.txt/.js/' *.txt"
+```
+to my .zshrc config, so now I can just dump the files into my fcc folder and bulk rename the extensions with 'tojs'. Much easier. Dreading tomorrow tho, 'cause recursive functions are bach on the menu for the final 2 lessons of Basic Javascript on FCC.
+
+**PS**: Actually, the first one (use-recursion-to-create-a-countdown.js) was so easy I finished it in a few minutes. Next one will probably be harder. See you tomorrow.
