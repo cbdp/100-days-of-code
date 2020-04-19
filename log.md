@@ -256,3 +256,41 @@ alias tojs="rename 's/.txt/.js/' *.txt"
 to my .zshrc config, so now I can just dump the files into my fcc folder and bulk rename the extensions with 'tojs'. Much easier. Dreading tomorrow tho, 'cause recursive functions are bach on the menu for the final 2 lessons of Basic Javascript on FCC.
 
 **PS**: Actually, the first one (use-recursion-to-create-a-countdown.js) was so easy I finished it in a few minutes. Next one will probably be harder. See you tomorrow.
+
+
+### Day 13: April 19, 2020
+#### 2 hours
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Javascript 110/110, ES6 13/31
+
+**Notes**: Yup, the second recursion question was harder, at least now I kind a feel like I get it... Tho this'll probably only last until the next time I have to do it. Happy to done with the Basic Javascript lessons, glad to be on the ES6 ones.
+
+**Code**: Spent a little extra time on arrow functions to drill them into my head. I was refactoring my solution to a puzzle I did on day 5. This is the one:
+```
+/* Puzzle: Test.assertEquals(songDecoder("AWUBWUBWUBBWUBWUBWUBC"), "A B C","multiples WUB should be replaced by only 1 space"); */
+
+function songDecoder(song) {
+  const patternDub = /WUB/g;
+  const patternSpace = /\s+/g;
+
+return song.replace(patternDub, ' ').replace(patternSpace, ' ').trim();
+};
+```
+changed that to:
+```
+const patternDub = /WUB/g;
+const patternSpace = /\s+/g;
+const songDecoder = (song) => song.replace(patternDub, ' ').replace(patternSpace, ' ').trim();
+```
+then I discovered the patterns could (and probably should) be embedded:
+```
+function songDecoder(song){
+  return song.replace(/(WUB)+/g, ' ').trim();
+}
+```
+Then I realised I'd forgot the arrow functions, so the final refaction was this:
+```
+const songDecoder = (song) => song.replace(/(WUB)+/g, ' ').trim();
+```
+much more concise, yay!
