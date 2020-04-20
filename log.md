@@ -294,3 +294,12 @@ Then I realised I'd forgot the arrow functions, so the final refaction was this:
 const songDecoder = (song) => song.replace(/(WUB)+/g, ' ').trim();
 ```
 much more concise, yay!
+
+
+### Day 14: April 20, 2020
+#### 1 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Javascript 110/110, ES6 17/31
+
+**Notes**: Was slightly scatterbrained today, but still managed to put in an hour on destructuring. Most daily solutions added to folder.
