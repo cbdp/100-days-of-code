@@ -303,3 +303,21 @@ much more concise, yay!
 **Today's Progress**: Basic Javascript 110/110, ES6 17/31
 
 **Notes**: Was slightly scatterbrained today, but still managed to put in an hour on destructuring. Most daily solutions added to folder.
+
+
+### Day 15: April 21, 2020
+#### 1 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: ES6 22/31 plus wrestling with an npm problem.
+
+**Notes**: A little burnt out on exercises again today, but got the hour in. I might finish up ES6 and try to do a project or something, so it's not just learning something new everyday, but practicing what I've learned a little bit as well. NPM ate more than half my time today with some messed up permissions, works now tho.
+
+
+### Day 16: April 22, 2020
+#### 1 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: ES6 31/31, Regular Expressions 13/33.
+
+**Notes**: Fnished the ES6 lessons, started on Regular Expressions. Discovered https://javascript30.com/ and signed up. Haven't started it yet tho.
