@@ -320,4 +320,12 @@ much more concise, yay!
 
 **Today's Progress**: ES6 31/31, Regular Expressions 13/33.
 
-**Notes**: Fnished the ES6 lessons, started on Regular Expressions. Discovered https://javascript30.com/ and signed up. Haven't started it yet tho.
+**Notes**: Finished the ES6 lessons, started on Regular Expressions. Discovered https://javascript30.com/ and signed up. Haven't started it yet tho. Also reorganised my freecodecamp folder.
+
+### Day 17: April 23, 2020
+#### 1.5 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Regular Expressions 33/33, Debugging 0/12
+
+**Notes**: Finished the Regular Expressions portion, but not exactly with flying colours. Made it through though.
