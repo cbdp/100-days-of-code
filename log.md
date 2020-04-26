@@ -339,7 +339,15 @@ much more concise, yay!
 #### 1 hour
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
-**Today's Progress**: Debugging 12/12
+**Today's Progress**: Debugging 12/12, Basic Data Structures 4/20
 
-**Notes**: Finished the debugging lessons. Forgot to push to git.
+**Notes**: Finished the debugging lessons, started Basic Data Structures. Forgot to push to git.
 
+
+### Day 19: April 26, 2020
+#### 1.5 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Data Structures 12/20
+
+**Notes**: Mostly arrays and methods for mutation or extracting data from them with .splice, .slice and .indexOf methods. Files added and pushed to fcc folder. 
