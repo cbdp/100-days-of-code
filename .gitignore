@@ -1,0 +1,9 @@
+#################
+## 100 days of code repo ignores
+#################
+
+# OSX
+*.DS_Store
+
+# Not finished files
+memjog.js
