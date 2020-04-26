@@ -322,10 +322,24 @@ much more concise, yay!
 
 **Notes**: Finished the ES6 lessons, started on Regular Expressions. Discovered https://javascript30.com/ and signed up. Haven't started it yet tho. Also reorganised my freecodecamp folder.
 
+
 ### Day 17: April 23, 2020
-#### 1.5 hour
+#### 2 hours
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
 **Today's Progress**: Regular Expressions 33/33, Debugging 0/12
 
-**Notes**: Finished the Regular Expressions portion, but not exactly with flying colours. Made it through though.
+**Notes**: Finished the Regular Expressions portion, but not exactly with flying colours. Made it through though. Also watched the first lesson from https://javascript30.com/, it's a very different type of Vanilla JS than the one I'm doing on FCC, but interesting nonetheless.
+
+
+<!--- MISSED A DAY DUE TO BIRTHDAY ATTENDENCE ---!>
+
+
+### Day 18: April 25, 2020
+#### 1 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Debugging 12/12
+
+**Notes**: Finished the debugging lessons. Forgot to push to git.
+
