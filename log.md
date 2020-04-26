@@ -332,7 +332,7 @@ much more concise, yay!
 **Notes**: Finished the Regular Expressions portion, but not exactly with flying colours. Made it through though. Also watched the first lesson from https://javascript30.com/, it's a very different type of Vanilla JS than the one I'm doing on FCC, but interesting nonetheless.
 
 
-<!--- MISSED A DAY DUE TO BIRTHDAY ATTENDENCE ---!>
+## MISSED A DAY DUE TO BIRTHDAY ATTENDENCE
 
 
 ### Day 18: April 25, 2020
