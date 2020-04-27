@@ -350,4 +350,13 @@ much more concise, yay!
 
 **Today's Progress**: Basic Data Structures 12/20
 
-**Notes**: Mostly arrays and methods for mutation or extracting data from them with .splice, .slice and .indexOf methods. Files added and pushed to fcc folder. 
+**Notes**: Mostly arrays and methods for mutation or extracting data from them with .splice, .slice and .indexOf methods. Files added and pushed to fcc folder.
+
+
+### Day 20: April 26, 2020
+#### 1.5 hours
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Data Structures 20/20, Basic Algorithm Scripting 4/16
+
+**Notes**: Finished the Basic Data Structures lessons. Was mildly disappointed it didn't cover .map, which seems to have been relegated to the 'Thousands of hours of interview code prep' section, which isn't really part of the JS course at all. Anyway: Up next is Basic Algorithm Scripting, which is basically small code projects wherein you apply all that you've learned so far. Interesting, but I'm unsure of a few things, so I'm glad I saved some of my earlier solutions.
