@@ -363,7 +363,7 @@ much more concise, yay!
 
 
 ### Day 21: April 28, 2020
-#### 2 hours
+#### 3 hours
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
 **Today's Progress**: Basic Algorithm Scripting 11/16
@@ -391,5 +391,5 @@ Above is my solution, but I'm loving this one listed in the docs using regex:
 const titleCase = (str) => str.toLowerCase().replace(/(^|\s)\S/g, L => L.toUpperCase());
 
 titleCase("I'm a little tea pot");
-
 ```
+**PS**: I also enrolled at codeacademy and took a few quizzes. Can't decide if I should stick with freecodecamp, do both or just switch. Will probably stick for freecodecamp for the time being to finish the js cert, then perhaps onto codeacademy for react and express.js. Even tho that probably means reviweing some of the basic js stuff as the two courses are vastly different.
