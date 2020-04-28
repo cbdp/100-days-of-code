@@ -353,10 +353,43 @@ much more concise, yay!
 **Notes**: Mostly arrays and methods for mutation or extracting data from them with .splice, .slice and .indexOf methods. Files added and pushed to fcc folder.
 
 
-### Day 20: April 26, 2020
+### Day 20: April 27, 2020
 #### 2 hours
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
 **Today's Progress**: Basic Data Structures 20/20, Basic Algorithm Scripting 5/16
 
 **Notes**: Finished the Basic Data Structures lessons. Was mildly disappointed it didn't cover .map, which seems to have been relegated to the 'Thousands of hours of interview code prep' section, which isn't really part of the JS course at all. Anyway: Up next is Basic Algorithm Scripting, which is basically small code projects wherein you apply all that you've learned so far. Interesting, but I'm unsure of a few things, so I'm glad I saved some of my earlier solutions.
+
+
+### Day 21: April 28, 2020
+#### 2 hours
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Algorithm Scripting 11/16
+
+**Notes**: Enjoying these small puzzles... Which both makes sense and doesn't, because I started the course in order to quit doing puzzles, but I do seem to finish the puzzles a lot more quickly now, even tho I'm still googling for methods. Added multiple solutions to fcc files and an example below.
+
+**Code**:
+```
+function titleCase(str) {
+
+  let array = str.toLowerCase().split(' ');
+  let result = [];
+
+  for (let i = 0; i < array.length; i++) {
+    result.push(array[i][0].toUpperCase() + array[i].slice(1, array[i].length));
+  };
+  
+  return result.join(' ');
+};
+
+titleCase("I'm a little tea pot");
+```
+Above is my solution, but I'm loving this one listed in the docs using regex:
+```
+const titleCase = (str) => str.toLowerCase().replace(/(^|\s)\S/g, L => L.toUpperCase());
+
+titleCase("I'm a little tea pot");
+
+```
