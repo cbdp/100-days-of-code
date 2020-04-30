@@ -391,3 +391,28 @@ const titleCase = (str) => str.toLowerCase().replace(/(^|\s)\S/g, L => L.toUpper
 titleCase("I'm a little tea pot");
 ```
 **PS**: I also enrolled at codeacademy and took a few quizzes. Can't decide if I should stick with freecodecamp, do both or just switch. Will probably stick for freecodecamp for the time being to finish the js cert, then perhaps onto codeacademy for react and express.js. Even tho that probably means reviweing some of the basic js stuff as the two courses are vastly different.
+
+
+### Day 22: April 29, 2020
+#### 1 hour
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Algorithm Scripting 14/16
+
+**Notes**: Not feeling it today, but pressed on. Kept making dumb mistakes. Will add code and this text to git tomorrow.
+
+
+### Day 23: April 30, 2020
+#### 100 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Algorithm Scripting 15/16 and short signup summary.
+
+**Notes**: I've signed up to the following services and realised I needed to plan a little ahead. The order:
+[X] https://www.freecodecamp.org - Since this is absolutely free, it's a great resource. I'm going to stick with getting my certification here first.
+[ ] https://www.codecademy.com - I've got three months worth of pro here, that's on a timer, so likely I'll go here after I finished my js cert on fcc. Note, the React course here is free.
+[ ] https://javascript30.com - Also free and unlimited.
+
+I enjoyed the one video I watched on javascript30, but I need a course covering the DOM. Hopefully, this is included at codecademy and I can get to it after I finish my cert. 
+
+Furthermore, I spent way too long on a single algorithm scripting question, because I tried to solve it without the .indexOf() method. Also, I've decided to list time spent coding in minutes instead from now on, as it's easier on the eyes with the current timer I'm using.
