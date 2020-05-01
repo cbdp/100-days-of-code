@@ -409,10 +409,62 @@ titleCase("I'm a little tea pot");
 **Today's Progress**: Basic Algorithm Scripting 15/16 and short signup summary.
 
 **Notes**: I've signed up to the following services and realised I needed to plan a little ahead. The order:
-[X] https://www.freecodecamp.org - Since this is absolutely free, it's a great resource. I'm going to stick with getting my certification here first.
-[ ] https://www.codecademy.com - I've got three months worth of pro here, that's on a timer, so likely I'll go here after I finished my js cert on fcc. Note, the React course here is free.
-[ ] https://javascript30.com - Also free and unlimited.
 
-I enjoyed the one video I watched on javascript30, but I need a course covering the DOM. Hopefully, this is included at codecademy and I can get to it after I finish my cert. 
+[x] https://www.freecodecamp.org - Since this is absolutely free, it's a great resource. I'm going to stick with getting my certification here first.
 
-Furthermore, I spent way too long on a single algorithm scripting question, because I tried to solve it without the .indexOf() method. Also, I've decided to list time spent coding in minutes instead from now on, as it's easier on the eyes with the current timer I'm using.
+[] https://www.codecademy.com - I've got three months worth of pro here, that's on a timer, so likely I'll go here after I finished my js cert on fcc. Note, the React course here is free.
+
+[] https://javascript30.com - Also free and unlimited.
+
+I enjoyed the one video I watched on javascript30, but I need a course covering the DOM. Hopefully, this is included at codecademy and I can get to it after I finish my cert. (I checked this a day or two later and yes, there's a few lessons on this at codecademy).
+
+Furthermore, I spent way too long on a single algorithm scripting question, because I tried to solve it without the .indexOf() method. Also, I've decided to list time spent coding in minutes instead from now on, as it's easier with the current timer I'm using.
+
+
+### Day 24: May 1, 2020
+#### 60 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Basic Algorithm Scripting 16/16, Object Oriented Programming 3/26
+
+**Notes**: Finished off Basic Algorithm Scripting today. Was difficult, but felt good. I worry about the upcoming Intermediate Algorithm Scripting module, but hopefully I'll be armed with a few more methods for that one. In general, I'm sick of looping through arrays. Adding today's hardest below with alternative solutions and where I messed up.
+
+**Code**:
+My solve:
+```
+function chunkArrayInGroups(arr, size) {
+  
+  let newArray = [];
+  let lengthy = arr.length;
+
+  for (let i = 0; i < lengthy; i += size) {
+    newArray.push(arr.splice(0, size));
+  };
+
+  return newArray;
+};
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+``` 
+this .splice solution from the docs makes more sense to be fair: 
+```
+function chunkArrayInGroups(arr, size) {
+  var newArray = [];
+  while (arr.length) {
+    newArray.push(arr.splice(0, size));
+  }
+  return newArray;
+}
+```
+Also, I wanted to use .slice rather than splice, but kept getting it wrong. Here's how it's done right:
+```
+function chunkArrayInGroups(arr, size) {
+  // Break it up.
+  var arr2 = [];
+  for (var i = 0; i < arr.length; i += size) {
+    arr2.push(arr.slice(i, i + size));
+  }
+  return arr2;
+}
+```
+The trick I missed was arr.slice(i, i + size).
