@@ -412,7 +412,7 @@ titleCase("I'm a little tea pot");
 
 [x] https://www.freecodecamp.org - Since this is absolutely free, it's a great resource. I'm going to stick with getting my certification here first.
 
-[] https://www.codecademy.com - I've got three months worth of pro here, that's on a timer, so likely I'll go here after I finished my js cert on fcc. Note, the React course here is free.
+[] https://www.codecademy.com - I've got three months worth of pro here, that's on a timer, so likely I'll go here after I finished my js cert on fcc. Note, both the JS basics course and the two React courses here is free.
 
 [] https://javascript30.com - Also free and unlimited.
 
@@ -422,7 +422,7 @@ Furthermore, I spent way too long on a single algorithm scripting question, beca
 
 
 ### Day 24: May 1, 2020
-#### 60 minutes
+#### 77 minutes
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
 **Today's Progress**: Basic Algorithm Scripting 16/16, Object Oriented Programming 3/26
@@ -468,3 +468,11 @@ function chunkArrayInGroups(arr, size) {
 }
 ```
 The trick I missed was arr.slice(i, i + size).
+
+### Day 25: May 2, 2020
+#### 90 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Object Oriented Programming 22/26
+
+**Notes**: Enjoying learning more about objects rather than arrays. Tho I'm sure this'll come back to bite me in the rear once the exercises start.
