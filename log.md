@@ -469,10 +469,20 @@ function chunkArrayInGroups(arr, size) {
 ```
 The trick I missed was arr.slice(i, i + size).
 
+
 ### Day 25: May 2, 2020
-#### 90 minutes
+#### 95 minutes
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
 **Today's Progress**: Object Oriented Programming 22/26
 
 **Notes**: Enjoying learning more about objects rather than arrays. Tho I'm sure this'll come back to bite me in the rear once the exercises start.
+
+
+### Day 26: May 3, 2020
+#### 90 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Object Oriented Programming 26/26, Functional Programming 5/24
+
+**Notes**: Finished Object Oriented Programming lessons, started Functional Programming lessons. 
