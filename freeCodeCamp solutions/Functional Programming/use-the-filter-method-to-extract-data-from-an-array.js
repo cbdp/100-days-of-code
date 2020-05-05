@@ -1,7 +1,3 @@
-/* The map method iterates over each item in an array and returns a new 
-array containing the results of calling the callback function on each 
-element. It does this without mutating the original array. */
-
 // The global variable
 var watchList = [
   {
@@ -116,23 +112,29 @@ var watchList = [
   }
 ];
 
-// clone multiple values with .map():
-const ratings = watchList.map(movie => ({
-  title: movie['Title'],
-  rating: movie['imdbRating']
+// Only change code below this line
+
+const filteredListMapped = watchList.map(x => ({
+  title: x['Title'],
+  rating: x['imdbRating']
 }));
+let filteredList = filteredListMapped.filter(y => y.rating > 8.0);
 
-// one liner alternative:
-const ratingsOne = watchList.map(({ Title: title, imdbRating: rating }) => ({title, rating}));
+// Only change code above this line
 
-// same result as above, but with a for loop:
-var ratingsOld = [];
-for(var i = 0; i < watchList.length; i++){
-  ratingsOld.push({title: watchList[i]["Title"],  rating: watchList[i]["imdbRating"]});
-}
+console.log(filteredList);
 
-console.log(JSON.stringify(ratings));
+// Although I like this one better from the docs, as it's easier to read:
 
-/* When not to use map() -- Since map builds a new array, using it when 
-you aren't using the returned array is an anti-pattern; use forEach or 
-for-of instead. */
+var filteredListDocs = watchList
+  .map(movie => {
+    return {
+      title: movie.Title,
+      rating: movie.imdbRating
+    };
+  })
+  .filter(movie => {
+    // return true it will keep the item
+    // return false it will reject the item
+    return parseFloat(movie.rating) >= 8.0;
+  });

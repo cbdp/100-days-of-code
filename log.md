@@ -494,3 +494,11 @@ The trick I missed was arr.slice(i, i + size).
 **Today's Progress**: Functional Programming 8/24
 
 **Notes**: Functional Programming lessons are... well, not ideal tbh. Having written a million for loops on fcc, they only gave me one example to learn .map, which was something I was otherwise looking forward to. Spent a lot of time today trying to clear things up with various googled tutorials.
+
+### Day 28: May 5, 2020
+#### 65 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Functional Programming 15/24
+
+**Notes**: No notes today, in a rush.

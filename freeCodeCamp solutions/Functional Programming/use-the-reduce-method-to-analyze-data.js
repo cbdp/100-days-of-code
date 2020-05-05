@@ -1,6 +1,16 @@
-/* The map method iterates over each item in an array and returns a new 
-array containing the results of calling the callback function on each 
-element. It does this without mutating the original array. */
+/* Array.prototype.reduce(), or simply reduce(), is the most general of 
+all array operations in JavaScript. You can solve almost any array 
+processing problem using the reduce method.
+
+The reduce method iterates over each item in an array and returns a 
+single value (i.e. string, number, object, array). This is achieved via 
+a callback function that is called on each iteration.
+
+The callback function accepts four arguments. The first argument is 
+known as the accumulator, which gets assigned the return value of the 
+callback function from the previous iteration, the second is the current 
+element being processed, the third is the index of that element and the 
+fourth is the array upon which reduce is called. */
 
 // The global variable
 var watchList = [
@@ -116,23 +126,46 @@ var watchList = [
   }
 ];
 
-// clone multiple values with .map():
-const ratings = watchList.map(movie => ({
-  title: movie['Title'],
-  rating: movie['imdbRating']
-}));
+function getRating(watchList){
 
-// one liner alternative:
-const ratingsOne = watchList.map(({ Title: title, imdbRating: rating }) => ({title, rating}));
+  const getNolan = watchList
+    .map(movie => {
+      return {
+        title: movie.Title,
+        rating: movie.imdbRating,
+        director: movie.Director
+      };
+    })
+    .filter(movie => {
+      return movie.director === 'Christopher Nolan';
+    });
+  
+  const sumNolan = getNolan
+    .reduce((sum, movie) => 
+    sum + parseFloat(movie.rating), 
+    0);
 
-// same result as above, but with a for loop:
-var ratingsOld = [];
-for(var i = 0; i < watchList.length; i++){
-  ratingsOld.push({title: watchList[i]["Title"],  rating: watchList[i]["imdbRating"]});
+  const averageRating = sumNolan / getNolan.length;
+  
+  return averageRating;
+};
+
+console.log(getRating(watchList));
+
+/* the solution from the docs seems simpler tho: 
+
+function getRating(watchList){
+  var averageRating = watchList
+    // Use filter to find films directed by Christopher Nolan
+    .filter(film => film.Director === "Christopher Nolan")
+
+    // Use map to convert their ratings from strings to numbers
+    .map(film => Number(film.imdbRating))
+
+    // Use reduce to add together their ratings
+    .reduce((sumOfRatings, rating) => sumOfRatings + rating) / watchList.filter(film => film.Director === "Christopher Nolan").length;
+
+  return averageRating;
 }
 
-console.log(JSON.stringify(ratings));
-
-/* When not to use map() -- Since map builds a new array, using it when 
-you aren't using the returned array is an anti-pattern; use forEach or 
-for-of instead. */
+*/
