@@ -505,7 +505,7 @@ The trick I missed was arr.slice(i, i + size).
 **Notes**: No notes today, in a rush.
 
 ### Day 29: May 6, 2020
-#### 85 minutes
+#### 90 minutes
 ##### Supplemented FreeCodeCamp with video tutorials
 
 **Today's Progress**: Paused the JavaScript Algorithms and Data Structures Certification from FreeCodeCamp and watched various tutorials on higher order functions.
@@ -529,6 +529,10 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 ```
 
 ##### .forEach()
+.forEach() syntax
+```
+arr.forEach(callback(currentValue [, index [, array]])[, thisArg])
+```
 Log each company name with a for loop
 ```
 for(let i = 0; i < companies.length; i++) {
@@ -543,6 +547,10 @@ forEach: Do the same, but with forEach
 ```
 
 ##### .filter()
+.filter() syntax
+```
+let newArray = arr.filter(callback(element[, index, [array]])[, thisArg])
+```
 Filter: Get 21 and older with a for loop
 ```
  let canDrink = [];
@@ -586,6 +594,12 @@ const lastedTenYears = companies.filter(company => (company.end - company.start 
 ```
 
 ##### .map()
+.map() syntax
+```
+let new_array = arr.map(function callback( currentValue[, index[, array]]) {
+    // return element for new_array
+}[, thisArg])
+```
 Map: Create array of company names with map
 ```
  const companyNames = companies.map(function(company) {
@@ -610,6 +624,10 @@ Map: Create array of ages squarerooted and timed with two
 ```
 
 ##### .sort()
+.sort() syntax
+```
+arr.sort([compareFunction])
+```
 Sort: Companies by start year with sort
 ```
  const sortedCompanies  = companies.sort(function(c1, c2) {
@@ -630,6 +648,10 @@ Sort: Sort ages ascending with sort (descending would be a + b)
 ```
 
 ##### .reduce()
+.reduce() syntax
+```
+arr.reduce(callback( accumulator, currentValue[, index[, array]] )[, initialValue])
+```
 Sum all ages with a for loop
 ```
  let ageSum = 0;
