@@ -694,7 +694,7 @@ const combined = ages
 ```
 
 ### Day 30: May 7, 2020
-#### 105 minutes
+#### 110 minutes
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
 **Today's Progress**: Functional Programming 21/24
