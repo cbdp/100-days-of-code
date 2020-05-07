@@ -714,7 +714,7 @@ function world() {
     console.log('world');
 };
 ```
-A higher order function is any function that takes a function as input or sends a function out as output is a higher order function.
+A higher order function is any function that takes a function as input or sends a function out as output.
 ```
 function hello(callback) {
     console.log('hello');
