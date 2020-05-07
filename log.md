@@ -697,7 +697,7 @@ const combined = ages
 #### 105 minutes
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
-**Today's Progress**: Functional Programming 18/24
+**Today's Progress**: Functional Programming 21/24
 
 **Notes**: Did the next couple of Functional Programming lessons and have added them to the fcc folder. Also, yesterday I forgot to add examples and an explaination of higher order functions, so I spent some time on that today and I'm adding it here in the second code segment of the log.
 
@@ -723,7 +723,7 @@ function hello(callback) {
         };
 };
 ```
-calling these two functions separately and apart gives:
+calling these two functions separately and together gives:
 ```
 world(); // logs world
 hello(); // logs hello
@@ -747,7 +747,7 @@ We can use our higher order function, multiplier(), to create other functions, f
 ```
 let doubler = multiplier(2); // creates a function that takes x and times with two
 ```
-The above takes function sets the factor of multiplier to 2 and returns doubler(x) as a function, so that:
+The above sets the factor of multiplier() to 2 and returns doubler(x) as a function, so that:
 ```
 doubler(4); // returns 4 * 2 = 8
 ```
