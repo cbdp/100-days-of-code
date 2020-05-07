@@ -118,7 +118,7 @@ const filteredListMapped = watchList.map(x => ({
   title: x['Title'],
   rating: x['imdbRating']
 }));
-let filteredList = filteredListMapped.filter(y => y.rating > 8.0);
+const filteredList = filteredListMapped.filter(y => y.rating > 8.0);
 
 // Only change code above this line
 

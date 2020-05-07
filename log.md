@@ -505,10 +505,12 @@ The trick I missed was arr.slice(i, i + size).
 **Notes**: No notes today, in a rush.
 
 ### Day 29: May 6, 2020
-#### 90 minutes
+#### 100 minutes
 ##### Supplemented FreeCodeCamp with video tutorials
 
 **Today's Progress**: Paused the JavaScript Algorithms and Data Structures Certification from FreeCodeCamp and watched various tutorials on higher order functions.
+
+**Notes**: Notes are in the code today.
 
 **Code**: 
 ##### Dataset for testing:
@@ -630,7 +632,7 @@ arr.sort([compareFunction])
 ```
 Sort: Companies by start year with sort
 ```
- const sortedCompanies  = companies.sort(function(c1, c2) {
+ const sortedCompanies = companies.sort(function(c1, c2) {
    if(c1.start > c2.start) {
      return 1;
    } else {
@@ -681,7 +683,7 @@ const totalYears = companies.reduce((total, company) => total + (company.end - c
 ```
 
 ##### Combining Methods
-Simple example of how to combine map, filter, sort and reduce
+Simple example of how to combine map, filter, sort and reduce on an array
 ```
 const combined = ages
   .map(age => age * 2)
@@ -690,4 +692,63 @@ const combined = ages
   .reduce((a, b) => a + b, 0);
 
 ```
-**Notes**: Notes are in the code today.
+
+### Day 30: May 7, 2020
+#### 105 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Functional Programming 18/24
+
+**Notes**: Did the next couple of Functional Programming lessons and have added them to the fcc folder. Also, yesterday I forgot to add examples and an explaination of higher order functions, so I spent some time on that today and I'm adding it here in the second code segment of the log.
+
+**Code 1**: Of all the things I wrote today, I'm most happy about this function, which takes a string and transforms it to an url-slug
+```
+const urlSlug = title => title.trim().toLowerCase().split(/\W+/g).join('-');
+```
+It's simply neat and easy to read, I think.
+
+**Code 2**:
+This is a normal function:
+```
+function world() {
+    console.log('world');
+};
+```
+A higher order function is any function that takes a function as input or sends a function out as output is a higher order function.
+```
+function hello(callback) {
+    console.log('hello');
+    if (callback instanceof Function) {
+        callback();
+        };
+};
+```
+calling these two functions separately and apart gives:
+```
+world(); // logs world
+hello(); // logs hello
+hello(world); // logs hello world
+```
+Here's an example of a function returning a function
+```
+function multiplier(factor) {
+    return function(x) {
+        return x * factor;
+    }
+}
+```
+same function as above, but with arrow functions
+```
+function multiplier(factor) {
+    return x => x * factor;
+}
+```
+We can use our higher order function, multiplier(), to create other functions, for example:
+```
+let doubler = multiplier(2); // creates a function that takes x and times with two
+```
+The above takes function sets the factor of multiplier to 2 and returns doubler(x) as a function, so that:
+```
+doubler(4); // returns 4 * 2 = 8
+```
+Maybe not the perfect explaination, but I thought it was important in conjunction with yesterdays focus on built-in array.prototypes .sort, .reduce, .map and .filter.
