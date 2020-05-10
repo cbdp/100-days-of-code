@@ -818,7 +818,8 @@ function diffArrayDocs(arr1, arr2) {
   function onlyInFirst(first, second) {
     // Looping through an array to find elements that don't exist in another array
     for (var i = 0; i < first.length; i++) {
-      if (second.indexOf(first[i]) === -1) { // incidentally, this is where I failed. Forgot the indexOf method.
+      // incidentally, this is where I failed. Forgot the indexOf method.
+      if (second.indexOf(first[i]) === -1) {
         // Pushing the elements unique to first to newArr
         newArr.push(first[i]);
       }
@@ -831,3 +832,128 @@ function diffArrayDocs(arr1, arr2) {
   return newArr;
 }
 ```
+
+### Day 32: May 9, 2020
+#### 75 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Intermediate Algorithm Scripting 3/21.
+
+**Notes**: None really, these are tough, but at least it feels like I'm learning more. Blew past the first puzzle today, but the next one has me completely stumped. After looking at it for an hour, I finally gave up and started reading the solutions. Didn't feel great, so I hope that's not an omen of more things to come. It's incredibly annoying to be stuck at 4/21 after having finished to many lessons. Either something hasn't stuck or the course structure is somewhat lacking. I need to use .hasOwnProperty() and Object.keys(), both of which I simply can't remember for the life of me. Had this been array, I think I could have done it, but doing it as objects with three convoluted functions all feeding eachother seems beyond me right now. I'm not pushing this to git today, as I'm feeling utterly defeated.
+
+PS. Went through the forums, thank christ I'm not the only one having problems with this. Seems loads of people find it difficult, as in it seems like the most difficult task in there. Added my spaghetti here and cleaned up the .js for the fcc folder, but wanted to show my work when it was terrible as well.
+
+**Code**: 
+The puzzle is this: Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.
+```
+function whatIsInAName(collection, source) {
+  var arr = [];
+  // Only change code below this line
+  let searchWord = Object.keys(source);
+  console.log(searchWords);
+  /*
+  console.log(collection[1].hasOwnProperty('last'));
+  console.log(source.hasOwnProperty('last'));
+  console.log(collection.filter(x => x.last == "Capulet"));
+  console.log(Object.keys(collection));
+  console.log(Object.values(collection));
+  console.log(Object.entries(collection));
+*/
+  return collection.filter(function(objectToBeSearched) {
+    return searchWord
+      .map(function(searchTerm) {
+        return objectToBeSearched.hasOwnProperty(searchTerm) 
+        && objectToBeSearched[searchTerm] === source[searchTerm];
+      })
+      .reduce(function(a, b) {
+        return a && b;
+      });
+  });
+  // Only change code above this line
+};
+// testing
+whatIsInAName([
+  { first: "Romeo", last: "Montague" }, 
+  { first: "Mercutio", last: null }, 
+  { first: "Tybalt", last: "Capulet" }
+  ], 
+  { last: "Capulet" });
+
+whatIsInAName([
+  { "apple": 1 }, 
+  { "apple": 1 }, 
+  { "apple": 1, "bat": 2 }
+  ], 
+  { "apple": 1 });
+  ```
+  
+### Day 33: May 10, 2020
+#### 90 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Intermediate Algorithm Scripting 3/21.
+
+**Notes**: Spent some time trying to discover what I quite couldn't work out in yesterdays code challenge. That's below
+
+**Code**:
+```
+// Create function with two parameters
+function whatIsInAName(collection, source) {
+  // Object.keys(x) returns the keys for source param
+  let searchWords = Object.keys(source); // i.e. ['last']
+  // Return a filter of collection, wherein the filtered items
+  // are defined as as a function of searchWords. Or more precisely:
+  /* Map through all keys and return Boolean values based on the 
+  check conditions: Both the key and its corresponding value must 
+  exist within the object we are filtering through. */
+  return collection.filter(function(objectToBeSearched) {
+    // return var searchTerms
+    return searchWords
+    // run map as a function of new var searchTerms
+      .map(function(searchTerm) {
+        // check if the collection filter hasOwnProperty(keys)
+        return objectToBeSearched.hasOwnProperty(searchTerm)
+        // and check if it matches values also
+        && objectToBeSearched[searchTerm] === source[searchTerm];
+      // returns true if found, false if not
+      })
+      // reduce the mapped Boolean values to a single Boolean
+      // that indicates whether all searchWords pass the  
+      // conditions checked above.
+      .reduce((a, b) => a && b);
+  });
+};
+
+// Testing
+whatIsInAName([
+  { first: "Romeo", last: "Montague" }, 
+  { first: "Mercutio", last: null }, 
+  { first: "Tybalt", last: "Capulet" }
+  ], 
+  { last: "Capulet" });
+```
+More solutions can be found in the fcc folder in the Intermediate Algorithm Scripting folder under the name wherefore-art-thou.js
+
+I also did a bit of battle with regex, which resulted in this solve for the next problem:
+```
+// my solve
+const spinalCase = str => 
+  str
+    .replace(/([A-Z])/g, ' $1')
+    .split(/\W|_/g)
+    .filter(x => x)
+    .join('-')
+    .toLowerCase();
+
+// testing
+console.log(spinalCase('This Is Spinal Tap'));
+console.log(spinalCase("thisIsSpinalTap"));
+console.log(spinalCase("The_Andy_Griffith_Show"));
+console.log(spinalCase("Teletubbies say Eh-oh"));
+console.log(spinalCase("AllThe-small Things"));
+```
+Afterwards I found this regex solution in the docs:
+```
+let regEx = /\s|_|(?=[A-Z])/;
+```
+It does not require .replace or .filter and as such is better, even tho I'm still happy with mine.
