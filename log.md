@@ -891,7 +891,7 @@ whatIsInAName([
 #### 90 minutes
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
-**Today's Progress**: Intermediate Algorithm Scripting 3/21.
+**Today's Progress**: Intermediate Algorithm Scripting 5/21.
 
 **Notes**: Spent some time trying to discover what I quite couldn't work out in yesterdays code challenge. That's below
 
@@ -936,7 +936,6 @@ More solutions can be found in the fcc folder in the Intermediate Algorithm Scri
 
 I also did a bit of battle with regex, which resulted in this solve for the next problem:
 ```
-// my solve
 const spinalCase = str => 
   str
     .replace(/([A-Z])/g, ' $1')
@@ -957,3 +956,11 @@ Afterwards I found this regex solution in the docs:
 let regEx = /\s|_|(?=[A-Z])/;
 ```
 It does not require .replace or .filter and as such is better, even tho I'm still happy with mine.
+
+### Day 34: May 11, 2020
+#### 60 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Intermediate Algorithm Scripting 6/21.
+
+**Notes**: Not happy with my solve today. Spent an hour building a function, that takes in a one-word string and turns it into pig latin. I won't add it here, but I'll put it up the Intermediate Algo script folder for future study. It also includes a few ways I could (or should) have done it differently. Tomorrow I might take the best one of these and try to refactor it, so it'll take whole sentences for fun.
