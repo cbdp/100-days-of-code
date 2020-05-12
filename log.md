@@ -964,3 +964,11 @@ It does not require .replace or .filter and as such is better, even tho I'm stil
 **Today's Progress**: Intermediate Algorithm Scripting 6/21.
 
 **Notes**: Not happy with my solve today. Spent an hour building a function, that takes in a one-word string and turns it into pig latin. I won't add it here, but I'll put it up the Intermediate Algo script folder for future study. It also includes a few ways I could (or should) have done it differently. Tomorrow I might take the best one of these and try to refactor it, so it'll take whole sentences for fun.
+
+### Day 35: May 12, 2020
+#### 60 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Intermediate Algorithm Scripting 8/21.
+
+**Notes**: No real notes today. Went a lot better than yesteday, solved two in an hour, but I find myself still solving complex problems with for loops and if else statements, where something like .map would be better.
