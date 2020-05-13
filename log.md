@@ -972,3 +972,11 @@ It does not require .replace or .filter and as such is better, even tho I'm stil
 **Today's Progress**: Intermediate Algorithm Scripting 8/21.
 
 **Notes**: No real notes today. Went a lot better than yesteday, solved two in an hour, but I find myself still solving complex problems with for loops and if else statements, where something like .map would be better.
+
+### Day 36: May 13, 2020
+#### 65 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Intermediate Algorithm Scripting 9/21.
+
+**Notes**: Just the one solve today, it's in the folder under missing-letters.js. Intermediate Algorithm Scripting is taking it's time, mostly because I'm failing to see what to use where. Sometimes I'm right, sometimes I'm very wrong, but I usually finish at least one a day, so so far so good.
