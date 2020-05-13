@@ -61,6 +61,24 @@ function fearNotLetterWithMap(str) {
   return missing;
 };
 
+// Here's a very simple one I found after finishing:
+// Very KISS, it makes mine look positively idiotically advanced
+function fearNotLetterSimple(str) {
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  var len = str.length;
+  var start = alphabet.indexOf(str[0]);
+  
+  for(var i = start; i < start + len; i++){
+    if(!str.includes(alphabet[i])){
+      return alphabet[i];
+    }
+  }
+  return undefined;
+}
+
+
+
+
 // The tests
 fearNotLetter("abce");
 fearNotLetter("stvwx");
