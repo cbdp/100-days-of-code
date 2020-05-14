@@ -980,3 +980,11 @@ It does not require .replace or .filter and as such is better, even tho I'm stil
 **Today's Progress**: Intermediate Algorithm Scripting 9/21.
 
 **Notes**: Just the one solve today, it's in the folder under missing-letters.js. Intermediate Algorithm Scripting is taking it's time, mostly because I'm failing to see what to use where. Sometimes I'm right, sometimes I'm very wrong, but I usually finish at least one a day, so so far so good.
+
+### Day 37: May 14, 2020
+#### 170 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Intermediate Algorithm Scripting 13/21.
+
+**Notes**: Got a good js workout in today, so happy days. Js files are in the folder.

@@ -21,7 +21,6 @@ function sumAll(arr) {
 sumAll([1, 4]);
 
 /* solution proposed in the docs */
-
 function sumAllDocs(arr) {
   var max = Math.max(arr[0], arr[1]);
   var min = Math.min(arr[0], arr[1]);
