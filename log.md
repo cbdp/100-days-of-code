@@ -988,3 +988,19 @@ It does not require .replace or .filter and as such is better, even tho I'm stil
 **Today's Progress**: Intermediate Algorithm Scripting 13/21.
 
 **Notes**: Got a good js workout in today, so happy days. Js files are in the folder.
+
+### Day 38: May 15, 2020
+#### 60 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Intermediate Algorithm Scripting 15/21.
+
+**Notes**: Dead tired and not feeling it today. Both the problems I solved more with Google than noodle. Remember to push to git tomorrow.
+
+### Day 39: May 16, 2020
+#### 104 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Intermediate Algorithm Scripting 18/21.
+
+**Notes**: Watched videos for about 20 minutes on deno, which is like node.js, but secure. It also handles typescript, which is something I don't need right now. Was interesting to watch tho and helped me get in the mood for coding. Maybe that's how I should start on days when I'm feeling lethargic? Happy with my solutions for today. As always, everything is in the folder (including yesterday).
