@@ -1004,3 +1004,11 @@ It does not require .replace or .filter and as such is better, even tho I'm stil
 **Today's Progress**: Intermediate Algorithm Scripting 18/21.
 
 **Notes**: Watched videos for about 20 minutes on deno, which is like node.js, but secure. It also handles typescript, which is something I don't need right now. Was interesting to watch tho and helped me get in the mood for coding. Maybe that's how I should start on days when I'm feeling lethargic? Happy with my solutions for today. As always, everything is in the folder (including yesterday).
+
+### Day 40: May 17, 2020
+#### 110 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Intermediate Algorithm Scripting 20/21.
+
+**Notes**: Nearly done now, there's a lot I still don't know, so I think I might do the JS course on https://www.codecademy.com next.
