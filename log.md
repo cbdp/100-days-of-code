@@ -1012,3 +1012,47 @@ It does not require .replace or .filter and as such is better, even tho I'm stil
 **Today's Progress**: Intermediate Algorithm Scripting 20/21.
 
 **Notes**: Nearly done now, there's a lot I still don't know, so I think I might do the JS course on https://www.codecademy.com next.
+
+
+## MISSED A DAY DUE TO BIRTHDAY ATTENDENCE
+
+
+### Day 41: May 19, 2020
+#### 60 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: Intermediate Algorithm Scripting 21/21, JavaScript Algorithms and Data Structures Projects 1/5
+
+**Notes**: Finally finished Intermediate Algorithm Scripting, just five slightly difficult projects to go and the cert is mine!
+
+**Code**:
+Continue working on this tomorrow, it works but it's not completing the exercise properly :/ 
+```
+const roman = {
+M: 1000, CM: 900, D: 500, CD: 400, C: 100, XC: 90,
+L: 50, XL: 40, X: 10, IX: 9, V: 5, IV: 4, I: 1 };
+
+function convertToRoman(num) {
+  let result = '';
+  for (let key in roman) {
+
+    if (num === roman[key]) {
+      console.log(result += key);
+      return result += key;
+    };
+
+    if (num > roman[key]) {
+      result = result + key.repeat(parseInt(num / roman[key]));
+      num = num % roman[key];
+    }
+
+  };
+ return result // .toString();
+};
+
+convertToRoman(36);
+convertToRoman(4); // IV
+convertToRoman(5); // V
+convertToRoman(649); // DCXLIX
+convertToRoman(3999); // MMMCMXCIX
+```
