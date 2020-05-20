@@ -1018,7 +1018,7 @@ It does not require .replace or .filter and as such is better, even tho I'm stil
 
 
 ### Day 41: May 19, 2020
-#### 60 minutes
+#### 78 minutes
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
 
 **Today's Progress**: Intermediate Algorithm Scripting 21/21, JavaScript Algorithms and Data Structures Projects 1/5
@@ -1049,10 +1049,41 @@ function convertToRoman(num) {
   };
  return result // .toString();
 };
+```
 
-convertToRoman(36);
-convertToRoman(4); // IV
-convertToRoman(5); // V
-convertToRoman(649); // DCXLIX
-convertToRoman(3999); // MMMCMXCIX
+### Day 42: May 20, 2020
+#### 97 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: JavaScript Algorithms and Data Structures Projects 3/5
+
+**Notes**: Gave up working out why my roman numeral converter didn't complete the exercise, as it returned all the corret values. Stole a solve from the docs instead, which afaik returned the exact same values as my solve above. Very confusing!
+
+**Code**: Continue working on this telephone number validator tomorrow, didn't finish it today.
+```
+function telephoneCheck(str) {
+  let newArray = str.split('')
+  // filter out all numbers with missing ()'s
+  if (newArray.indexOf('(') >= 0 && newArray.indexOf(')') >= 0 
+  // but not the ones with no ()'s at all
+  || newArray.indexOf('(') == -1 && newArray.indexOf(')') == -1) {
+    // probably needs to kill the ones with >1 if length something
+    newArray = newArray.map(x => parseInt(x)).filter(x => !!x);
+    if (newArray.length >= 11 && newArray[0] === 1 
+    || newArray.length >= 10 ) {
+     // console.log(newArray);
+      return true;
+    }
+  }
+  return false;
+};
+// debug
+console.log("-1 (757) 622-7382".split(''));
+// tests
+console.log(telephoneCheck("1(555)555-5555") + ' true');
+console.log(telephoneCheck("1 555)555-5555") + ' false');
+console.log(telephoneCheck("123**&!!asdf#") + ' false');
+console.log(telephoneCheck("(555)5(55?)-5555") + ' false');
+console.log(telephoneCheck("-1 (757) 622-7382") + ' false');
+console.log(telephoneCheck("2 (757) 622-7382") + ' false');
 ```
