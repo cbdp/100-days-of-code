@@ -1059,31 +1059,79 @@ function convertToRoman(num) {
 
 **Notes**: Gave up working out why my roman numeral converter didn't complete the exercise, as it returned all the corret values. Stole a solve from the docs instead, which afaik returned the exact same values as my solve above. Very confusing!
 
-**Code**: Continue working on this telephone number validator tomorrow, didn't finish it today.
+
+### Day 43: May 21, 2020
+#### 100 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: JavaScript Algorithms and Data Structures Projects 4/5
+
+**Notes**: Today I wrote probably the worst US telephone number validator in history, but it finally passed. Included below for what ever the opposite of bragging rights is. Tomorrow I should check out the solves from the docs as I usually do.
+
+**Code**:
 ```
+// helper function
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+// my bruteforcey solve
 function telephoneCheck(str) {
+  const weirdRegEx = /[?!#*&]/gm;
   let newArray = str.split('')
+  // filter out any weirdness
+  if (str.search(weirdRegEx) === -1)
+  // filter out those pesky negatives and weird ()'s
+  if (newArray[0] !== '-' && newArray[newArray.length - 1] !== ')')
   // filter out all numbers with missing ()'s
   if (newArray.indexOf('(') >= 0 && newArray.indexOf(')') >= 0 
   // but not the ones with no ()'s at all
   || newArray.indexOf('(') == -1 && newArray.indexOf(')') == -1) {
-    // probably needs to kill the ones with >1 if length something
-    newArray = newArray.map(x => parseInt(x)).filter(x => !!x);
-    if (newArray.length >= 11 && newArray[0] === 1 
-    || newArray.length >= 10 ) {
-     // console.log(newArray);
-      return true;
-    }
-  }
+    // map to parseInt, then filter out all numbers
+    newArray = newArray.map(x => parseInt(x)).filter(n => isNumber(n));
+    let length = newArray.length
+    // check the length, if > 10, ensure US country code
+    if (length === 10 || length === 11 && newArray[0] === 1) {
+        return true; 
+      }}
   return false;
 };
-// debug
-console.log("-1 (757) 622-7382".split(''));
-// tests
-console.log(telephoneCheck("1(555)555-5555") + ' true');
-console.log(telephoneCheck("1 555)555-5555") + ' false');
-console.log(telephoneCheck("123**&!!asdf#") + ' false');
-console.log(telephoneCheck("(555)5(55?)-5555") + ' false');
-console.log(telephoneCheck("-1 (757) 622-7382") + ' false');
-console.log(telephoneCheck("2 (757) 622-7382") + ' false');
 ```
+
+### Day 44: May 22, 2020
+#### 96 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: JavaScript Algorithms and Data Structures Projects 4/5
+
+**Notes**: Checked out the solves from yesterdays telephone num validator and they're.... using a single RegEx. I knew I didn't exactly aced it, but it's humbling to see it solved in a single regEx, albeit a little annoying. For anything production, I'd hesitate to use either solution and would probably rather pick a specific js library to solve this problem, as that seems a little more bullet- and futureproof. Anyway, the final projecy is difficult, difficult, lemon, difficult.
+
+Working on the final piece for the cert; a cash registry thing.
+
+### Day 45: May 23, 2020
+#### 60 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp
+
+**Today's Progress**: JavaScript Algorithms and Data Structures Projects 4/5
+
+**Notes**: ....Still working on the cash registry thing.
+
+
+### Day 46: May 24, 2020
+#### 90 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp & Codecademy
+
+**Today's Progress**: JavaScript Algorithms and Data Structures Projects 5/5 && starting codecademy lessons on basic js
+
+**Notes**: FINISHED with the FCC cert! Codecademy is quite different from fcc, so I'm still finding my legs, but on or about lesson 8. Will update this either tomorrow or another time, if I stick with the basic js ones. Some I need the practice, others I get and some I still need the practice, but the problem formulation is so convoluted I'm not sure what it wants from me. 
+
+
+### Day 47: May 25, 2020
+#### 68 minutes
+##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp & Codecademy
+
+**Today's Progress**: Codecademy Basic Javascript Course: Iterators, Objects and classes
+
+**Notes**: I'm skipping through the codecademy course to pick up some things I missed first time around with fcc. Just started on 'classes' at the end of today, so I will probably do those tomorrow. Also added a new folder for codecademy to the github, but there's only one file there so far, as I forgot to save my previous work.
+
+**Other**: Happy towel day everyone!
