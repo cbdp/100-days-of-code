@@ -1104,7 +1104,7 @@ function telephoneCheck(str) {
 
 **Today's Progress**: JavaScript Algorithms and Data Structures Projects 4/5
 
-**Notes**: Checked out the solves from yesterdays telephone num validator and they're.... using a single RegEx. I knew I didn't exactly aced it, but it's humbling to see it solved in a single regEx, albeit a little annoying. For anything production, I'd hesitate to use either solution and would probably rather pick a specific js library to solve this problem, as that seems a little more bullet- and futureproof. Anyway, the final projecy is difficult, difficult, lemon, difficult.
+**Notes**: Checked out the solves from yesterdays telephone num validator and they're.... using a single RegEx. I knew I didn't exactly ace it, but it's humbling to see it solved in a single regEx, albeit a little annoying. For anything production, I'd hesitate to use either solution and would probably rather pick a specific js library to solve this problem, as that seems a little more bullet- and futureproof. Anyway, the final project is difficult, difficult, lemon, difficult.
 
 Working on the final piece for the cert; a cash registry thing.
 
@@ -1116,7 +1116,6 @@ Working on the final piece for the cert; a cash registry thing.
 
 **Notes**: ....Still working on the cash registry thing.
 
-
 ### Day 46: May 24, 2020
 #### 90 minutes
 ##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp & Codecademy
@@ -1125,13 +1124,161 @@ Working on the final piece for the cert; a cash registry thing.
 
 **Notes**: FINISHED with the FCC cert! Codecademy is quite different from fcc, so I'm still finding my legs, but on or about lesson 8. Will update this either tomorrow or another time, if I stick with the basic js ones. Some I need the practice, others I get and some I still need the practice, but the problem formulation is so convoluted I'm not sure what it wants from me. 
 
-
 ### Day 47: May 25, 2020
 #### 68 minutes
-##### JavaScript Algorithms and Data Structures Certification from FreeCodeCamp & Codecademy
+##### Codecademy Basic Javascript
 
 **Today's Progress**: Codecademy Basic Javascript Course: Iterators, Objects and classes
 
 **Notes**: I'm skipping through the codecademy course to pick up some things I missed first time around with fcc. Just started on 'classes' at the end of today, so I will probably do those tomorrow. Also added a new folder for codecademy to the github, but there's only one file there so far, as I forgot to save my previous work.
 
 **Other**: Happy towel day everyone!
+
+### Day 48: May 26, 2020
+#### 124 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: Classes
+
+**Notes**: Spent time with classes today, how to set them up and how to user super- and subclasses. I also took a look at the new lesson, browser compatibility and transpilation, and decided to skip it. Rewriting ES6 to ES5 seems a waste of time these days, altought the section on caniuse.com was helpful. Tomorrow it's modules, which weren't covered in the freecodecamp courses, so I'm looking forward to that.
+
+**Code**: Notes in code from class classes today
+```
+// superclass
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+  get name() {
+    return this._name;
+  }
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+  // static method
+  static generatePassword() {
+    return Math.floor(Math.random() * 10000);
+  }
+}
+// subclass Nurse
+class Nurse extends HospitalEmployee {
+  constructor(name, certifications) {
+    super(name);
+    this._certifications = [certifications];
+  }
+  get certifications() {
+    return this._certifications;
+  }
+  addCertification(newCertification) {
+    return this._certifications.push(newCertification);
+  }
+};
+// subclass Doctor
+class Doctor extends HospitalEmployee {
+  constructor(name, insurance) {
+    super(name);
+    this._insurance = false;
+  }
+}
+// testing
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
+const docDeath = new Doctor('Death', false);
+console.log(nurseOlynyk);
+console.log(docDeath);
+nurseOlynyk.takeVacationDays(5);
+console.log(nurseOlynyk.remainingVacationDays);
+nurseOlynyk.addCertification('Genetics');
+console.log(nurseOlynyk.certifications);
+```
+And then I built a small library, as per Codecademy instructions:
+```
+class Media {
+  constructor(title) {
+    this._title = title;
+    this._isCheckedOut = false;
+    this._ratings = [];
+  }
+  get title() {
+    return this.title;
+  }
+  get isCheckedOut() {
+    return this._isCheckedOut;
+  }
+  get ratings() {
+    return this._ratings;
+  }
+  getAverageRating() {
+    return (this._ratings.reduce((a, b) => a + b, 0) / 
+           (this._ratings.length)).toFixed(2);
+  }
+  toggleCheckOutStatus() {
+    this._isCheckedOut = !this._isCheckedOut;
+  }
+  addRating(...x) {
+    this._ratings.push(...x);
+  }
+};
+
+class Book extends Media {
+  constructor(title, author, pages) {
+    super(title);
+    this._author = author;
+    this._pages = pages;
+  }
+  get author() {
+    return this._author;
+  }
+  get pages() {
+    return this._pages;
+  }
+};
+
+class Movie extends Media {
+  constructor(title, director, runTime) {
+    super(title);
+    this._director = director;
+    this._runTime = runTime;
+  }
+  get director() {
+    return this._director;
+  }
+  get runTime() {
+    return this._runTime;
+  }
+};
+
+class CD extends Media {
+  constructor(title, artist, songs) {
+    super(title);
+    this._artist = artist;
+    this._songs = [songs];
+  }
+  get artist() {
+    return this._artist;
+  }
+  get songs() {
+    return this._songs;
+  }
+};
+
+// testing
+const historyOfEverything = new Book('A Short History of Nearly Everything', 'Bill Bryson', 544);
+console.log(historyOfEverything.isCheckedOut);
+historyOfEverything.toggleCheckOutStatus();
+console.log(historyOfEverything.isCheckedOut);
+historyOfEverything.addRating(4, 5, 5);
+console.log(historyOfEverything.ratings);
+console.log(historyOfEverything.getAverageRating());
+const speed = new Movie('Speed', 'Jan de Bont', 116);
+speed.toggleCheckOutStatus();
+console.log(speed.isCheckedOut);
+speed.addRating(1);
+speed.addRating(1);
+speed.addRating(5);
+console.log(speed.getAverageRating());
+```
+
