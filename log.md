@@ -1140,7 +1140,7 @@ Working on the final piece for the cert; a cash registry thing.
 
 **Today's Progress**: Codecademy Basic Javascript Course: Classes
 
-**Notes**: Spent time with classes today, how to set them up and how to user super- and subclasses. I also took a look at the new lesson, browser compatibility and transpilation, and decided to skip it. Rewriting ES6 to ES5 seems a waste of time these days, altought the section on caniuse.com was helpful. Tomorrow it's modules, which weren't covered in the freecodecamp courses, so I'm looking forward to that.
+**Notes**: Spent time with classes today, how to set them up and how to user super- and subclasses. I also took a look at the new lesson, browser compatibility and transpilation, and decided to skip it. Rewriting ES6 to ES5 seems a waste of time these days, although the section on caniuse.com was helpful. Tomorrow it's modules, which weren't covered in the freecodecamp courses, so I'm looking forward to that.
 
 **Code**: Notes in code from class classes today
 ```
