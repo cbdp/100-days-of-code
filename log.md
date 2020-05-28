@@ -1057,7 +1057,7 @@ function convertToRoman(num) {
 
 **Today's Progress**: JavaScript Algorithms and Data Structures Projects 3/5
 
-**Notes**: Gave up working out why my roman numeral converter didn't complete the exercise, as it returned all the corret values. Stole a solve from the docs instead, which afaik returned the exact same values as my solve above. Very confusing!
+**Notes**: Gave up working out why my roman numeral converter didn't complete the exercise, as it returned all the correct values. Stole a solve from the docs instead, which afaik returned the exact same values as my solve above. Very confusing!
 
 
 ### Day 43: May 21, 2020
@@ -1135,7 +1135,7 @@ Working on the final piece for the cert; a cash registry thing.
 **Other**: Happy towel day everyone!
 
 ### Day 48: May 26, 2020
-#### 124 minutes
+#### 130 minutes
 ##### Codecademy Basic Javascript
 
 **Today's Progress**: Codecademy Basic Javascript Course: Classes
@@ -1282,3 +1282,18 @@ speed.addRating(5);
 console.log(speed.getAverageRating());
 ```
 
+### Day 49: May 27, 2020
+#### 80 minutes
+##### GatsbyJS: Updates and fixes
+
+**Today's Progress**: Gatsby JS fixes
+
+**Notes**: Todays courseload, and probably tomorrows, has been cancelled due to having to do some work with gatsbyjs. Spent my time today optimizing a gatsby site for re-deployment with SSL.
+
+### Day 50: May 28, 2020
+#### 160 minutes
+##### GatsbyJS: CSS etc
+
+**Today's progress**: Drew some css flags and added them to the site.
+
+**Notes**: The flags took a while, 'cause I've never drawn anything in CSS before, and although css and gatsby is better than nothing, I'm slightly annoyed at having been pulled away from my vanilla JS exploration. Could do both? Not enough time right now, but this'll all be finished soon, hopefully.
