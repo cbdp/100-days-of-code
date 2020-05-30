@@ -1297,3 +1297,19 @@ console.log(speed.getAverageRating());
 **Today's progress**: Drew some css flags and added them to the site.
 
 **Notes**: The flags took a while, 'cause I've never drawn anything in CSS before, and although css and gatsby is better than nothing, I'm slightly annoyed at having been pulled away from my vanilla JS exploration. Could do both? Not enough time right now, but this'll all be finished soon, hopefully.
+
+### Day 51: May 29, 2020
+#### 60 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: Modules
+
+**Notes**: Waiting on client, so going back to exercises. Yay! Currently learning about modules. Wrote up everything I learned about import and export and put it in modules-airplanes.js in the Codecademy Basic JS folder.
+
+### Day 52: May 29, 2020
+#### 65 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: Modules
+
+**Notes**: Finished up yesterdays modules lessons and started on the module projects. Fnished the first one, modules-msg-mixer.js and started work on the next one, modules-workaround.js, but haven't finished the latter one yet. Hopefully, I'll have time to do this tomorrow. Also aced the modules quiz :)
