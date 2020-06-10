@@ -1306,10 +1306,131 @@ console.log(speed.getAverageRating());
 
 **Notes**: Waiting on client, so going back to exercises. Yay! Currently learning about modules. Wrote up everything I learned about import and export and put it in modules-airplanes.js in the Codecademy Basic JS folder.
 
-### Day 52: May 29, 2020
-#### 65 minutes
+### Day 52: May 30, 2020
+#### 74 minutes
 ##### Codecademy Basic Javascript
 
 **Today's Progress**: Codecademy Basic Javascript Course: Modules
 
-**Notes**: Finished up yesterdays modules lessons and started on the module projects. Fnished the first one, modules-msg-mixer.js and started work on the next one, modules-workaround.js, but haven't finished the latter one yet. Hopefully, I'll have time to do this tomorrow. Also aced the modules quiz :)
+**Notes**: Finished up yesterdays modules lessons and started on the module projects. Fnished the first one, modules-msg-mixer.js and started work on the next one, modules-employee-lookup.js, but haven't finished the latter one yet. Hopefully, I'll have time to do this tomorrow. Also aced the modules quiz :)
+
+### Day 53: May 31, 2020
+#### 70 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: Modules and Promises
+
+**Notes**: Finished up yesterdays module project and added it to the basic js Codecademy folder here. Now I'm looking at promises. I also did a quick magic 8 ball from the conditionals classes, 'cause I realised I'd forgotten the correct syntax for a switch.
+
+### Day 54: June 1, 2020
+#### 60 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: Promises
+
+**Notes**: Not feeling that motivated today, as it's hot as all hell. Still cranked out a slow, grueling 60 minutes on Promises tho. Hopefully, some of it stuck, to help myself out in the future, I added a bunch of comments in sunglasses-part-three.js.
+
+### Day 55: June 2, 2020
+#### 160 minutes
+##### GatsbyJS: Updates and fixes
+
+**Today's Progress**: Gatsby JS fixes
+
+**Notes**: Aargh. Not much to say. Have barely been coding, mostly just fooling around with settings and plugins to improve the lighthouse score and get things exactly as the client wants 'em.
+
+### Day 56: June 3, 2020
+#### 255 minutes
+##### GatsbyJS: Updates and fixes
+
+**Today's Progress**: Gatsby JS fixes
+
+**Notes**: Same as yesterday...
+
+### Day 57: June 4, 2020
+#### 160 minutes
+##### GatsbyJS: Updates and fixes
+
+**Today's Progress**: Gatsby JS fixes
+
+**Notes**: Same as yesterday...
+
+### Day 58: June 5, 2020
+#### 105 minutes
+##### GatsbyJS: Updates and fixes
+
+**Today's Progress**: Gatsby JS fixes
+
+**Notes**: Same as yesterday...
+
+### Day 59: June 6, 2020
+#### 55 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: Promises
+
+**Notes**: Client server is down, so my downtime is up. Returned to js promises. Turns out, I was nearly done with the promise lessons, here are some takeaways:
+- Promises are JavaScript objects that represent the eventual result of an asynchronous operation.
+- Promises can be in one of three states: pending, resolved, or rejected.
+- A promise is settled if it is either resolved or rejected.
+- We construct a promise by using the new keyword and passing an executor function to the Promise constructor method.
+- setTimeout() is a Node function which delays the execution of a callback function using the event-loop.
+- We use .then() with a success handler callback containing the logic for what should happen if a promise resolves.
+- We use .catch() with a failure handler callback containing the logic for what should happen if a promise rejects.
+- Promise composition enables us to write complex, asynchronous code that’s still readable. We do this by chaining multiple .then()‘s and .catch()‘s.
+- To use promise composition correctly, we have to remember to return promises constructed within a .then().
+- We should chain multiple promises rather than nesting them.
+- To take advantage of concurrency, we can use Promise.all().
+
+I do feel a little bit like I've lost a lot of learning while fixing the three gatsby sites for the past 4-5 days, which annoys me. Hopefully, it'll come back to me. Spent some time reading over my promises-*.js files to reacqaint myself.
+
+### Day 60: June 7, 2020
+#### 60 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: Async
+
+**Notes**: Started on Async lessons.. Also did a bit of gatsby work.
+
+### Day 61: June 8, 2020
+#### 57 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: Async
+
+**Notes**: Continued Async lessons.. Also did a bit of gatsby work.
+
+### Day 62: June 9, 2020
+#### 95 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: Async
+
+**Notes**: Continued and finished Async lessons.. Also did some gatsby work and participated in discussions on git. Next up is is the final lesson on codecademy basic js, which is HTTP requests.
+
+Async Review
+- async...await is syntactic sugar built on native JavaScript promises and generators.
+- We declare an async function with the keyword async.
+- Inside an async function we use the await operator to pause execution of our function until an asynchronous action completes and the awaited promise is no longer pending.
+- await returns the resolved value of the awaited promise.
+- We can write multiple await statements to produce code that reads like synchronous code.
+- We use try...catch statements within our async functions for error handling.
+- We should still take advantage of concurrency by writing async functions that allow asynchronous actions to happen in concurrently whenever possible.
+
+
+### Day 63: June 10, 2020
+#### 65 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: HTTP
+
+**Notes**: HTTP AJAX Requests Review
+- JavaScript is the language of the web because of its asynchronous capabilities. AJAX, which stands for Asynchronous JavaScript and XML, is a set of tools that are used together to take advantage of JavaScript’s asynchronous capabilities.
+- There are many HTTP request methods, two of which are GET and POST.
+- GET requests only request information from other sources.
+- POST methods can introduce new information to other sources in addition to requesting it.
+- GET requests can be written using an XMLHttpRequest object and vanilla JavaScript.
+- POST requests can also be written using an XMLHttpRequest object and vanilla JavaScript.
+- Writing GET and POST requests with XHR objects and vanilla JavaScript requires constructing the XHR object using new, setting the responseType, creating a function that will handle the response object, and opening and sending the request.
+- To add a query string to a URL endpoint you can use ? and include a parameter.
+- To provide additional parameters, use & and then include a key-value pair, joined by =.
+- Determining how to correctly write the requests and how to properly implement them requires carefully reading the documentation of the API with which you’re working.
