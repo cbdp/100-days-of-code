@@ -1418,10 +1418,10 @@ Async Review
 
 
 ### Day 63: June 10, 2020
-#### 65 minutes
+#### 70 minutes
 ##### Codecademy Basic Javascript
 
-**Today's Progress**: Codecademy Basic Javascript Course: HTTP
+**Today's Progress**: Codecademy Basic Javascript Course: HTTP requests
 
 **Notes**: HTTP AJAX Requests Review
 - JavaScript is the language of the web because of its asynchronous capabilities. AJAX, which stands for Asynchronous JavaScript and XML, is a set of tools that are used together to take advantage of JavaScript’s asynchronous capabilities.
@@ -1434,3 +1434,28 @@ Async Review
 - To add a query string to a URL endpoint you can use ? and include a parameter.
 - To provide additional parameters, use & and then include a key-value pair, joined by =.
 - Determining how to correctly write the requests and how to properly implement them requires carefully reading the documentation of the API with which you’re working.
+
+
+### Day 64: June 11, 2020
+#### 215 minutes
+##### Codecademy Basic Javascript
+
+**Today's Progress**: Codecademy Basic Javascript Course: HTTP requests
+
+**Notes**: HTTP AJAX Requests (with es6 in the form of fetch)
+- GET and POST requests can be created a variety of ways.
+- Use AJAX to asynchronously request data from APIs. fetch() and async/await are new functionalities developed in ES6 (promises) and ES8 respectively.
+- Promises are a new type of JavaScript object that represent data that will eventually be returned from a request.
+- fetch() is a web API that can be used to create requests. fetch() will return promises.
+- We can chain .then() methods to handle promises returned by fetch().
+- The .json() method converts a returned promise to a JSON object.
+- async is a keyword that is used to create functions that will return promises.
+- await is a keyword that is used to tell a program to continue moving through the message queue while a promise resolves.
+- await can only be used within functions declared with async.
+
+I finished up the codecademy basic js course lessons on http requests. Whether or not it'll stick, I'm not so sure, but at least I did it and completed the project which required all the new-to-me-keywords like fetch(), async, await, try and catch. Now I'm looking at three different courses and I can't quite decide where to go, so here are some notes in relation to that:
+[] Node.js course: Pro course, meaning I'll lose access to it at some point. Only takes an hour or two tho.
+[] Express.js: Pro course, again, will lose access, but takes a bit longer.
+[] React.js part 1 and 2: This is a free course. It's what I want to do, but it seems almost fiscally irresponsible to do so.
+
+I'll X the one I pick tomorrow... I'm also slightly tempted to try my hand at a pull request for a gatsby-plugin with a very kind creator, let's see. I think it might be node.js, then gatsby plugin, then express and finally react. A surprise option would be to finish the entire basic js course just to brush up on some basic skills, but I'm not sure that's for right now... 
