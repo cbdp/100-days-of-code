@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html>
+ <!-- The async attribute loads and executes the script 
+asynchronously with the rest of the webpage. This means 
+that, similar to the defer attribute, the HTML parser will 
+continue parsing the rest of the HTML as the script is 
+downloaded in the background. However, with the async 
+attribute, the script will not wait until the entire page is 
+parsed: it will execute immediately after it has been 
+downloaded.
+
+When is it useful?
+async is useful for scripts that are independent of other 
+scripts in order to function accordingly. Thus, if it does 
+not matter exactly at which point the script file is 
+executed, asynchronous loading is the most suitable option as 
+it optimizes web page load time. -->
+  <head>
+    <link rel="stylesheet" href="style.css">
+   <script id="blue" src="turnBlue.js" async></script>
+  </head>
+  
+  <body>		
+   	<p class="centered" id="logo">Codecademy</p>
+  </body>
+</html>

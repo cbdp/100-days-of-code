@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<!-- The HTML parser does NOT process the next element in the 
+HTML file until it loads and executes the <script> element, 
+thus leading to a delay in load time and resulting in a 
+poor user experience.
+
+Additionally, scripts are loaded sequentially, so if one 
+script depends on another script, they should be placed in 
+that very order inside the HTML file.-->
+
+  <body>
+    <p class="centered" id="logo">Codecademy</p>
+    <script src="script1.js"></script>
+  	<script src="script2.js"></script>
+  </body>
+</html>
+
+// script1.js
+let newColor = 'blue';
+
+// script2.js
+var elem = document.getElementById('logo');
+elem.style.color = newColor;
+
+// style.css
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 10vw;
+  color: pink; 
+  top: 40%;
+  left: 50%; 
+  position: absolute; 
+  transform: translateX(-50%) translateY(-50%);
+}

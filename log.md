@@ -1437,7 +1437,7 @@ Async Review
 
 
 ### Day 64: June 11, 2020
-#### 215 minutes
+#### 225 minutes
 ##### Codecademy Basic Javascript
 
 **Today's Progress**: Codecademy Basic Javascript Course: HTTP requests
@@ -1454,8 +1454,262 @@ Async Review
 - await can only be used within functions declared with async.
 
 I finished up the codecademy basic js course lessons on http requests. Whether or not it'll stick, I'm not so sure, but at least I did it and completed the project which required all the new-to-me-keywords like fetch(), async, await, try and catch. Now I'm looking at three different courses and I can't quite decide where to go, so here are some notes in relation to that:
-[] Node.js course: Pro course, meaning I'll lose access to it at some point. Only takes an hour or two tho.
+[X] Node.js course: Pro course, meaning I'll lose access to it at some point. Only takes two hours tho.
 [] Express.js: Pro course, again, will lose access, but takes a bit longer.
 [] React.js part 1 and 2: This is a free course. It's what I want to do, but it seems almost fiscally irresponsible to do so.
 
 I'll X the one I pick tomorrow... I'm also slightly tempted to try my hand at a pull request for a gatsby-plugin with a very kind creator, let's see. I think it might be node.js, then gatsby plugin, then express and finally react. A surprise option would be to finish the entire basic js course just to brush up on some basic skills, but I'm not sure that's for right now... 
+
+
+### Day 65: June 12, 2020
+#### 232 minutes
+##### Codewars puzzles
+
+**Today's Progress**: Okay, so I decided to play around with codewars, which I shouldn't have done...
+
+**Notes**: Spent way too long on these. Turns out, I'm better, but still no ninja.
+
+**Code**: First this thing:
+```
+/* Given a positive integer n, calculate the following sum:
+ n + n/2 + n/4 + n/8 + ...
+ Example: 25  =>  25 + 12 + 6 + 3 + 1 = 47 */
+
+const halvingSum = n => {
+  let array = [n];
+  while (n > 1) {
+    let i = 2;
+    let result = Math.floor(n / i);
+    array.push(result);
+    i *= 2;
+    n -= n/2;
+  }
+  return array.reduce((a, b) => (a + b));
+}
+```
+And then this one:
+```
+/* Given a standard english sentence passed in as a string, write a method that will return a 
+sentence made up of the same words, but sorted by their first letter. 
+However, the method of sorting has a twist to it:
+- All words that begin with a lower case letter should be at the beginning of the sorted sentence, and sorted in ascending order.
+- All words that begin with an upper case letter should come after that, and should be sorted in descending order.
+If a word appears multiple times in the sentence, it should be returned multiple times in the sorted sentence. Any punctuation must be discarded. */
+
+function sort(sentence){
+  let array = sentence.match(/[^_\W]+/g);
+  let arrayUppercase = [];
+  let arrayLowercase = [];
+  array.forEach((elem) => {
+    if (elem[0] === elem[0].toUpperCase()) {
+      arrayUppercase.push(elem);
+    } else {
+      arrayLowercase.push(elem);
+    }
+  })
+  arrayUppercase = arrayUppercase.sort().reverse();
+  arrayLowercase = arrayLowercase.sort()
+  return arrayLowercase.concat(arrayUppercase).join(' ');
+}
+```
+which i refactored to:
+```
+function sort(sentence){
+  let array = sentence.match(/[^_\W]+/g);
+  let arrayUppercase = [];
+  let arrayLowercase = [];
+  array.forEach((elem) => elem[0] === elem[0].toUpperCase() ? arrayUppercase.push(elem) : arrayLowercase.push(elem));
+  return arrayLowercase.sort().concat(arrayUppercase.sort().reverse()).join(' ');
+}
+```
+and finally this, which took ages as well, because I forgot certain things are immutable!
+```
+/* You are given a secret message you need to decipher. 
+Here are the things you need to know to decipher each word:
+- the second and the last letter is switched (e.g. Hello becomes Holle)
+- the first letter is replaced by its character code (e.g. H becomes 72)
+
+function decipherThis(str) {
+  let array = [];
+  let result = [];
+  let code = str.split(' ');
+  code.forEach((elem) => array.push(elem.replace(parseInt(elem), String.fromCharCode(parseInt(elem)))));
+  array.forEach((elem) => {
+    if (elem.length >= 3) {
+      let word = elem.split('');
+      let secondLetter = word[1];
+      let lastLetter = word[elem.length - 1];
+      word[1] = lastLetter;
+      word[elem.length - 1] = secondLetter;
+      result.push(word.join(''));
+    } else {
+      result.push(elem);
+    }})
+    return result.join(' ');
+};
+```
+All this tells me is I still need to get better with the built in methods like .map, that's if I want to keep up on codewars.
+
+**Notes 2**:...Had some spare time and decided to start the node.js lessons as well, here's an important takeaway: 
+"Node is REPL: REPL is an abbreviation for read–eval–print loop. It’s a program that loops, or repeatedly cycles, through three different states: a read state where the program reads input from a user, the eval state where the program evaluates the user’s input, and the print state where the program prints out its evaluation to a console. Then it loops through these states again."
+
+### Day 66: June 13, 2020
+#### 85 minutes
+##### Codecademy Node.js
+
+**Today's Progress**: 13/15 on the node.js lessons
+
+**Notes**: I'm not sure I'm really learning anything about node.js, well, a little, but it seems quite confusing right now when coming from vanilla js.
+
+### Day 67: June 14, 2020
+#### 57 minutes
+##### Codecademy node.js and Building Interactive JavaScript Websites
+
+**Today's Progress**: finished node.js lessons. Started Building Interactive JavaScript Websites lessons
+
+**Notes**: Takeaways from the node.js lessons.
+
+- Node.js is a JavaScript runtime, an environment that allows us to execute our JavaScript code by converting it into something a computer can understand.
+- REPLs are processes that read, evaluate, print, and repeat (loop), and Node.js comes with its own REPL we can access in our terminal with the node command.
+- We run JavaScript programs with Node in the terminal by typing node followed by the file name (if we’re in the same directory) or the absolute path of the file.
+- Code can be organized into separate files, modules, and combined through requiring them where needed using the require() function.
+- In addition to core modules, modules included within the environment to efficiently perform common tasks, we can also create our own modules using module.exports and the require() function.
+- We can access NPM, a registry of hundreds of thousands of packages of re-usable code from other developers, directly through our terminal.
+- Node has an event-driven architecture.
+- We can make our own instances of the EventEmitter class and we can subscribe to listen for named events with the .on() method and emit events with the .emit() method.
+- Node uses an event loop which enables asynchronous actions to be handled in a non-blocking way by adding callback functions to a queue of tasks to be executed when the callstack is empty.
+- In order to handle errors during asynchronous operations, provided callback functions are expected to have an error as their first parameter.
+- Node allows for both output, data/feedback to a user provided by a computer, and input data/feedback to the computer provided by the user.
+- The Node fs core module is an API for interacting with the file system.
+- Streams allow us to read or write data piece by piece instead of all at once.
+- The Node http core module allows for easy creation of web servers, computer processes that listen for requests from clients and return responses.
+
+Also an update on my Codecademy learning path OR courses I'm interested in. This time including finished courses
+[X] Node.js course (pro)
+[] Express.js (pro)
+[] React.js part 1 and 2
+[X] Basic JS
+[] Building Interactive JS websites (pro)
+
+### Day 68: June 15, 2020
+#### 60 minutes
+##### Codecademy Building Interactive JavaScript Websites and codewars
+
+**Today's Progress**: got extremely bored with the Building Interactive JavaScript Websites lessons, did a kata on codewars instead.
+
+**Notes**:
+- The DOM is a structural model of a web page that allows for scripting languages to access that page.
+- The system of organization in the DOM mimics the nesting structure of an HTML document.
+- Elements nested within another are referred to as the children of that element. The element they are nested within is called the parent element of those elements.
+- The DOM also allows access to the regular attributes of an HTML element such as its style, id, etc.
+
+**Code**:
+```
+// make a rot13 encoder
+const input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+const output = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+
+const rot13 = msg => {
+  const encode = x => input.indexOf(x) > -1 ? output[input.indexOf(x)] : x;
+  return msg.split('').map(encode).join('')
+};
+```
+
+### Day 69: June 16, 2020 
+#### 275 minutes
+##### Codecademy Building Interactive JavaScript Websites and GatsbyJS
+
+**Today's Progress**: Gatsby plugins work. Returned to lesson plan.
+
+**Notes**: Spent a while trying to wrap my head around how gatsby plugins work. Learnt a lot, but I'll need more hands-on with React before I attempt anything further, is my guess. The JS itself I can understand, it's all the other stuff around it that's a little confusing. Returned to lesson plan with notes below.
+
+- The document keyword grants access to the root of the DOM in JavaScript
+- The DOM Interface allows you to select a specific element with CSS selectors by using the .querySelector() method
+- You can also access an element directly by its ID with .getElementById()
+- The .innerHTML and .style properties allow you to modify an element by changing its contents or style respectively
+- You can create, append, and remove elements by using the .createElement(),.appendChild() and .removeChild() methods respectively
+- The .onclick property can add interactivity to a DOM element based on a click event
+
+Also, I wrote a small game as per codeacademy instructions. It's in the JS websites folder under chore-door. It took ages!
+
+### Day 70: June 17, 2020 
+#### 78 minutes
+##### Codecademy Building Interactive JavaScript Websites, GatsbyJS and Apache.
+
+**Today's Progress**: Deployed two sites to client servers, last site has permissions problems, which luckily aren't mine. Returned to lessons.
+
+**Notes**: Annoying with the server permissions problems (403), but hopefully it's fixed soon and I can finally be done with them and concentrate on learning some other stuff :)
+
+
+### Day 70: June 18, 2020 
+#### 158 minutes
+##### Codecademy Building Interactive JavaScript Websites
+
+**Today's Progress**: Finished some event lessons, see notes below.
+
+**Notes**:
+- Events are user interactions and browser manipulations on the document object model.
+- JavaScript engines register events as objects with properties and methods associated with them.
+- Event handlers are registered as properties of their event object.
+- Event object properties like .target, .type, and .timeStamp are used to provide information about the event.
+- The .addEventListener() method can be used to add multiple event handler functions to a single event.
+- The .removeEventListener() method stops specific event handlers from “listening” for specific events firing.
+- Remember to always use 'on' before stuff like keypress, click, mouseover.
+- Not all DOM events have event handlers associated with them.
+- JavaScript interprets events as event object that store event information residing in properties and methods
+
+Also did a "piano player" project, which was just terrible. Waste of time tbh. Tomorrow it's intro to handlebars! 
+...Did a little more work on a kata from codewars, simply because the piano exercise annoyed me.. Answer tomorrow
+
+### Day 71: June 19, 2020 
+#### 90 minutes
+##### Codecademy Building Interactive JavaScript Websites and Codewars
+
+**Today's Progress**: Finished kata, started handlebars.js
+
+**Notes**: A little tired today, but finished the kata from yesterday and started the lessons on handlebars.js, tho I still have a ways to go there.
+
+**Code**:
+```
+/* If you divide each number by the greatest common factor, it gives you the correct code to the chest.
+Example Clue: "A2B4C6"
+Greatest common factor = 2
+2 / 2 = 1
+4 / 2 = 2
+6 / 2 = 3
+Code: "A1B2C3" */
+
+//my solve
+const euclid = (a, b) => b == 0 ? a : euclid(b, (a % b));
+const treasureCode = (clue) => {
+  let pirateArray = [];
+  let letArray = clue.match(/[a-zA-Z]+/g);
+  let numArray = clue.match(/\d+/g);
+  numArray = numArray.map(n => n / numArray.reduce(euclid));
+  for (let i = 0; letArray.length > i; i++) {
+    pirateArray.push(letArray[i], numArray[i])
+  }
+  return pirateArray.join('');
+};
+```
+
+### Day 72: June 20, 2020 
+#### 110 minutes
+##### Codecademy Building Interactive JavaScript Websites and Github
+
+**Today's Progress**: Continuing lessons on handlebars.js. Created pull request for gatsby docs re my apache problem.
+
+**Notes**: Handlebars.js recap:
+- Handlebars is an external library used to create templates which are a mix of HTML, text, and expressions.
+- Handlebars uses expressions which are wrapped inside double braces like: `{{someVariable}}`
+- A script tag with a type of "text/x-handlebars-template" is used to deliver a template to the browser.
+- Handlebar.compile() returns a templating function from a template script intended for Handlebars.
+- A template created from .compile() will take an object as an argument and use it as context to generate a string containing HTML.
+- Handlebars has built in block helpers which can be included in a Handlebars script.
+- Block helpers have a starting expression and an ending expression. The starting expression will have a # appears before a keyword. The ending expression will have the same keyword but with a / character to denote the end.
+- The `{{if}}` will conditionally render a block of code.
+- An `{{else}}` expression can be inserted into an if helper block and used as part of the conditional statement.
+- `{{each}}` is another built-in helper expression which accepts an an array to iterate through.
+- In the block helper functions, the `{{this}}` expression gives context and serves as a placeholder for the current value.
+
+Just started on the handlebars.js project; refactoring a music site from static html to handlebars.js templating. Will attempt to finish tomorrow, but am whiped out for today, I think.

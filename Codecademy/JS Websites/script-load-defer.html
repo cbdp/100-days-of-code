@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html>
+ <!-- HTML4 introduced the defer and async attributes of the 
+ <script> element to address the user wait-time in the 
+   website based on different scenarios.
+
+The defer attribute specifies scripts should be executed 
+after the HTML file is completely parsed. When the HTML 
+parser encounters a <script> element with the defer 
+attribute, it loads the script but defers the actual 
+execution of the JavaScript until after it finishes parsing 
+the rest of the elements in the HTML file.
+
+When is defer useful?
+When a script contains functionality that requires 
+interaction with the DOM, the defer attribute is the way to 
+go. This way, it ensures that the entire HTML file has been 
+parsed before the script is executed. -->
+
+  <head>
+  	<link rel="stylesheet" href="style.css">
+  	<script id="blue" src="turnBlue.js" defer></script>
+  </head>
+
+  <body>		
+  	<p class="centered" id="logo">Codecademy</p>
+
+  	<script id="yellow" src="turnYellow.js"></script>
+  </body>
+</html>
