@@ -1713,3 +1713,49 @@ const treasureCode = (clue) => {
 - In the block helper functions, the `{{this}}` expression gives context and serves as a placeholder for the current value.
 
 Just started on the handlebars.js project; refactoring a music site from static html to handlebars.js templating. Will attempt to finish tomorrow, but am whiped out for today, I think.
+
+
+### Day 73: June 21, 2020 
+#### 150 minutes
+##### Codecademy Building Interactive JavaScript Websites and codewars
+
+**Today's Progress**: Finished Codecademy Building Interactive JavaScript Websites.
+
+**Notes**: Refactored a static html website 'musicon' to use handlebars.js templating. Considering starting the express course now?
+
+- [X] Node.js course (pro)
+- [] Express.js (pro) This one next, I think.
+- [] React.js part 1 and 2
+- [X] Basic JS
+- [X] Building Interactive JS websites (pro)
+
+Decided to struggle a little with a codewars puzzle rather than making my mind up today. Right now, it's not working, but hopefully I'll get it working either later today or tomorrow.
+
+
+### Day 74: June 22, 2020 
+#### 155 minutes
+##### Codewars
+
+**Today's Progress**: Failed my kata, but put in the time.
+
+**Notes**: Could absolutely not get it working, but it was a learning experience none the less. One thing that annoyed me immensely was the debugging part of it, which did not show passed tests, only the failed ones, which made my hurricane of if else statements an absolute nightmare. Two hours and thirty minutes I spent on that, not counting the time from yesterday!
+
+Deffo do the express.js course tomorrow, as today felt like a complete waste.
+
+
+### Day 75: June 23, 2020 
+#### 65 minutes
+##### Codecademy Introduction to Express.js
+
+**Today's Progress**: Started expressJS lessons.
+
+**Notes**: Very tired for no reason.
+
+
+### Day 76: June 24, 2020 
+#### 73 minutes
+##### Codecademy Introduction to Express.js
+
+**Today's Progress**: Continued expressJS lessons.
+
+**Notes**: Mental note, it might be fun to build an API with something like express-no-stress, rather than hardcoding one.
