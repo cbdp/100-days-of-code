@@ -7,3 +7,12 @@
 
 # Not finished files
 memjog.js
+
+# NODE
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+debris.js
+package-lock.json

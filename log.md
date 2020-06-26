@@ -1753,9 +1753,27 @@ Deffo do the express.js course tomorrow, as today felt like a complete waste.
 
 
 ### Day 76: June 24, 2020 
-#### 73 minutes
+#### 80 minutes
 ##### Codecademy Introduction to Express.js
 
 **Today's Progress**: Continued expressJS lessons.
 
 **Notes**: Mental note, it might be fun to build an API with something like express-no-stress, rather than hardcoding one.
+
+
+### Day 77: June 25, 2020 
+#### 182 minutes
+##### Codecademy Introduction to Express.js
+
+**Today's Progress**: Continued expressJS lessons.
+
+**Notes**: Doing an express project api in the Codecademy/Express JS/quote-api-starting folder and finding it difficult, but rewarding.
+
+
+### Day 78: June 26, 2020 
+#### 72 minutes
+##### Codecademy Introduction to Express.js
+
+**Today's Progress**: Continued expressJS lessons.
+
+**Notes**: Finished my small api in the Codecademy/Express JS/quote-api-starting folder. It works! Next up tomorrow is an introduction to middleware functions in expressJS, which means I'll be refactoring and/or cleaning up some spaghetti DRY-violating code... Sounds useful, if a little dull :)
