@@ -1777,3 +1777,92 @@ Deffo do the express.js course tomorrow, as today felt like a complete waste.
 **Today's Progress**: Continued expressJS lessons.
 
 **Notes**: Finished my small api in the Codecademy/Express JS/quote-api-starting folder. It works! Next up tomorrow is an introduction to middleware functions in expressJS, which means I'll be refactoring and/or cleaning up some spaghetti DRY-violating code... Sounds useful, if a little dull :)
+
+
+
+### Day 79: June 27, 2020 
+#### 88 minutes
+##### Codecademy Introduction to Express.js
+
+**Today's Progress**: Continued expressJS lessons.
+
+**Notes**: Nearly died from boredom and heatexhaustion while coding today. Learning about middleware functions in express, which just seems like anoter word for functional programming.
+
+**Notes part two**: I seriously fell asleep writing the above sentence after just an hour with the codecademy expressJS stuff. It is unbearably boring with constant "learn A, now forget A, B is much better! Remeber A? It's better than B now, if it wasn't for C, so delete everything and write D"-refactoring and it's wrinkling my brain. I'm seriously considering dropping this course and taking the API one on freecodecamp instead. Maybe a third option? It's not an uninteresting subject, but the constant introductions of ABC when D is best practice is maddening.
+
+
+### Day 80: June 28, 2020 
+#### 60 minutes
+##### Codecademy Basic JS
+
+**Today's Progress**: Reaffirming some basic JS.
+
+**Notes**: The express course continued to annoy me, so I've put it on pause. I read the lesson plan for freecodecamps express module and it seems better setup, so I'll probably go with that sometime in the future. But for now, I'm getting back to some JS basics to reaffirm what I've already learned. In fact, I went back to brush up on objects, specifically the notation:
+
+- Objects store collections of key-value pairs.
+- Each key-value pair is a property—when a property is a function it is known as a method.
+- An object literal is composed of comma-separated key-value pairs surrounded by curly braces.
+- You can access, add or edit a property within an object by using dot notation or bracket notation.
+- We can add methods to our object literals using key-value syntax with anonymous function expressions as values or by using the new ES6 method syntax.
+- We can navigate complex, nested objects by chaining operators.
+- Objects are mutable—we can change their properties even when they’re declared with const.
+- Objects are passed by reference— when we make changes to an object passed into a function, those changes are permanent.
+- We can iterate through objects using the For...in syntax.
+
+I'll continue with more objects and maybe some object projects tomorrow. Javascript is fun again :)
+
+
+### Day 81: June 29, 2020 
+#### 60 minutes
+##### Codecademy Basic JS
+
+**Today's Progress**: Reaffirming some basic JS.
+
+**Notes**: From the advanced objects lessons:
+- The object that a method belongs to is called the calling object.
+- The this keyword refers the calling object and can be used to access properties of the calling object.
+- Methods do not automatically have access to other internal properties of the calling object.
+- The value of this depends on where the this is being accessed from.
+- We cannot use arrow functions as methods if we want to access other internal properties.
+- JavaScript objects do not have built-in privacy, rather there are conventions to follow to notify other developers about the intent of the code.
+- The usage of an underscore before a property name means that the original developer did not intend for that property to be directly changed.
+- Setters and getter methods allow for more detailed ways of accessing and assigning properties.
+- Factory functions allow us to create object instances quickly and repeatedly.
+- There are different ways to use object destructuring: one way is the property value shorthand and another is destructured assignment.
+
+Continuing to build a small meal maker object thingy tomorrow.
+
+
+### Day 82: June 30, 2020 
+#### 55 minutes
+##### Codecademy Basic JS
+
+**Today's Progress**: Reaffirming some basic JS.
+
+**Notes**: Finished my meal maker obejcts project. Considering doing a small terminal/node game project tomorrow.
+
+
+### Day 83: July 1, 2020 
+#### 60 minutes
+##### Codecademy PhaserJS
+
+**Today's Progress**: Started PhaserJS lessons.
+
+**Notes**: I found that building small games was really enjoyable with the chore-door project I did in the Build JavaScript Webpages, so I'll look into PhaserJS.
+
+
+### Day 84: July 2, 2020 
+#### 65 minutes
+##### Codecademy PhaserJS
+
+**Today's Progress**: Continued PhaserJS lessons.
+
+**Notes**: Enjoying these lessons so far. Here's a review of what I learned in the first module:
+Think about games that you’ve played and try to imagine how they break down into the following steps:
+
+- Loading in assets (all the sounds and images for your game: 3D models and textures would also be assets here although that isn’t something we’re going to be handling in Phaser).
+- Setting up a scene by creating all of the interactive game objects.
+- Adding event listeners and handlers to those game objects.
+- Updating the scene each frame, detecting if buttons are pressed and triggering events based on those button presses.
+
+See learning.js and basics.js in Codecademy/Phaser JS for more details and the code from the first module.
