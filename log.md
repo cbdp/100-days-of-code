@@ -1866,3 +1866,12 @@ Think about games that you’ve played and try to imagine how they break down in
 - Updating the scene each frame, detecting if buttons are pressed and triggering events based on those button presses.
 
 See learning.js and basics.js in Codecademy/Phaser JS for more details and the code from the first module.
+
+
+### Day 85: July 3, 2020 
+#### 66 minutes
+##### Codecademy PhaserJS and Objects
+
+**Today's Progress**: Completed a quick objects project. Continued PhaserJS lessons.
+
+**Notes**: Wanted to reaffirm objects before continuing, so I did a small project from the basic js codecademy course on objects. It's dawned on me, that if I want to get 100% on the course and potentially get the certification, I'll need to finish all the basic projects. Rest of the hour was spent on building small paint-by-numbers game.

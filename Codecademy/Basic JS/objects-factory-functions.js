@@ -51,7 +51,7 @@ tinCan.beep(); // logs Beep Boop
 properties to variables known as destructuring. One
 of the techniques we can use with destructuring, is 
 called property value shorthand. The above robotFactory
-can  thusly be refactored as: */
+can thusly be refactored as: */
 
 function robotFactory(model, mobile){
   return {
