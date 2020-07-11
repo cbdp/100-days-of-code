@@ -1875,3 +1875,100 @@ See learning.js and basics.js in Codecademy/Phaser JS for more details and the c
 **Today's Progress**: Completed a quick objects project. Continued PhaserJS lessons.
 
 **Notes**: Wanted to reaffirm objects before continuing, so I did a small project from the basic js codecademy course on objects. It's dawned on me, that if I want to get 100% on the course and potentially get the certification, I'll need to finish all the basic projects. Rest of the hour was spent on building small paint-by-numbers game.
+
+
+### Day 86: July 4, 2020 
+#### 72 minutes
+##### Codecademy PhaserJS and gatsby docs
+
+**Today's Progress**: Rewrote a PR for the gatsby docs. Continued PhaserJS lessons.
+
+**Notes**: Spent a bit of time on the pull request, then started making an adventure game a la the swords and sorcery books. Not done yet, will be tomorrow.
+
+
+### Day 87: July 5, 2020 
+#### 60 minutes
+##### Codecademy PhaserJS and Docker 
+
+**Today's Progress**: Installed Docker. Continued PhaserJS lessons.
+
+**Notes**: I'd like to play around a bit more with Docker when I've got time, but not right now I don't think. I created a small arcade style game with phaserJS today, it went pretty well, a little too well maybe, but it works and it's quite fun. The exercise has a few ways to 'challenge yourself' at the end of it, so I think I might do that, just to reaffirm some of what I've learned. I highly doubt you'll see anything from me on the top 10 game scorelist soon tho :D
+
+
+### Day 88: July 6, 2020 
+#### 62 minutes
+##### Codecademy PhaserJS  
+
+**Today's Progress**: So tired I nearly died, but finished regardless.
+
+**Notes**: Following along building a space invader clone. Right now it's not working, maybe tomorrow. Nothing is displayed at least, could be a bad connection on my part? (Nope. It's a bug!)
+
+### Day 89: July 7, 2020 
+#### 120 minutes
+##### Codecademy PhaserJS  
+
+**Today's Progress**: Continued PhaserJS lessons.
+
+**Notes**: Finished my space invaders clone. It works OK, not perfect, but very playable. Spent most of today searching for a bug, which turned out to be either an extra .this, a misplaced comma, a missing () on a method or all three. Happy with the end result tho.
+
+
+### Day 90: July 8, 2020 
+#### 60 minutes
+##### Codecademy PhaserJS  
+
+**Today's Progress**: Continued PhaserJS lessons.
+
+**Notes**: Nothing much to say. Learning about animations right now. I can't decide if learning phaserJS is a waste of time or not, it's not likely to be at all relevant in the future, but there are some basic JS things like objects, classes, etc., which I refresh while doing it, so hopefully that weigh up.
+
+
+### Day 91: July 9, 2020 
+#### 68 minutes
+##### Codecademy PhaserJS  
+
+**Today's Progress**: Continued PhaserJS lessons.
+
+**Notes**: Realised I have codecademy pro until 26 July 2020. That's about another two weeks. I should probably spend that time a little more wisely than playing around with PhaserJS? Still finished a game tho and the course is nearly done, so might as well complete it. Just a few more lessons to go covering visual effects. Final project looks to be a sort of doodle jump-y game, so that could be fun. I also checked the LÔVE Lua framework thing for game designing and it actually looks quite similar to the syntax in PhaserJS, if not exactly Javascript.
+
+
+### Day 92: July 10, 2020 
+#### 110 minutes
+##### Codecademy PhaserJS  
+
+**Today's Progress**: Continued PhaserJS lessons. Helped with HTML.
+
+**Notes**: Completed a sorta platformer while learning about PhaserJS camera and effects. Pretty fun and not that far from supermario! That took an hour, then I spent nearly the same amount of time helping a fellow 100daysofcode-coder, who couldn't get a landing page to pass on freecodecamp. Turns out it wanted anchor links to id="x", not name="x", tho both worked, only one passed the tests.
+
+
+### Day 93: July 11, 2020 
+#### 112 minutes
+##### Codecademy PhaserJS  
+
+**Today's Progress**: Completed PhaserJS lessons. Completed Basic JS course.
+
+**Notes**: Last phaserJS project was a bit of a let down, but I could spend more time on it later? Also realised I lacked the lessons on transpilation and browser compatibility from the basic JS course, so jumped in and finished those off. Takeaways below:
+
+- ES5 — The old JavaScript version that is supported by all modern web browsers.
+- ES6 — The new(er) JavaScript version that is not supported by all modern web browsers. The syntax is more readable, similar to other programming languages, - and addresses the source of common bugs in ES5.
+caniuse.com — a website you can use to look up HTML, CSS, and JavaScript browser compatibility information.
+- Babel — A JavaScript package that transpiles JavaScript ES6+ code to ES5.
+- npm init — A terminal command that creates a package.json file.
+- package.json — A file that contains information about a JavaScript project.
+- npm install — A command that installs Node packages.
+- babel-cli — A Node package that contains command line tools for Babel.
+- babel-preset-env — A Node package that contains ES6+ to ES5 syntax mapping information.
+- .babelrc — A file that specifies the version of the JavaScript source code.
+- "build" script — A package.json script that you use to tranpsile ES6+ code to ES5.
+- npm run build — A command that runs the build script and transpiles ES6+ code to ES5.
+
+Steps needed to set up a project for transpilation:
+Initialize your project using npm init and create a directory called src
+Install babel dependencies by running
+npm install babel-cli -D
+npm install babel-preset-env -D
+Create a .babelrc file inside your project and add the following code inside it:
+{
+  "presets": ["env"]
+}
+Add the following script to your scripts object in package.json:
+"build": "babel src -d lib"
+Run npm run build whenever you want to transpile your code from your src to lib directories.
