@@ -1972,3 +1972,21 @@ Create a .babelrc file inside your project and add the following code inside it:
 Add the following script to your scripts object in package.json:
 "build": "babel src -d lib"
 Run npm run build whenever you want to transpile your code from your src to lib directories.
+
+
+### Day 94: July 12, 2020 
+#### 65 minutes
+##### Codecademy Basic JS Projects  
+
+**Today's Progress**: Reaffirming some basic JS stuff.
+
+**Notes**: Doing coding challenges.. Still taking some time :/
+
+
+### Day 95: July 13, 2020 
+#### 161 minutes
+##### Codecademy Basic JS Projects  
+
+**Today's Progress**: Reaffirming some basic JS stuff.
+
+**Notes**: Continued from yesterday with building a credit card number validator. It's done now, but it took almost a total of a 100 minutes! Continued with another project, which is also taking me a while, but feel like I'm (re)learning a lot.
