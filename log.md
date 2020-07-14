@@ -1954,7 +1954,7 @@ caniuse.com — a website you can use to look up HTML, CSS, and JavaScript brows
 - npm init — A terminal command that creates a package.json file.
 - package.json — A file that contains information about a JavaScript project.
 - npm install — A command that installs Node packages.
-- babel-cli — A Node package that contains command line tools for Babel.
+- babel-cli — A Node package that contains xcommand line tools for Babel.
 - babel-preset-env — A Node package that contains ES6+ to ES5 syntax mapping information.
 - .babelrc — A file that specifies the version of the JavaScript source code.
 - "build" script — A package.json script that you use to tranpsile ES6+ code to ES5.
@@ -1978,7 +1978,7 @@ Run npm run build whenever you want to transpile your code from your src to lib 
 #### 65 minutes
 ##### Codecademy Basic JS Projects  
 
-**Today's Progress**: Reaffirming some basic JS stuff.
+**Today's Progress**: Reaffirming some basic JS stuff with codecademy projects.
 
 **Notes**: Doing coding challenges.. Still taking some time :/
 
@@ -1987,6 +1987,23 @@ Run npm run build whenever you want to transpile your code from your src to lib 
 #### 161 minutes
 ##### Codecademy Basic JS Projects  
 
-**Today's Progress**: Reaffirming some basic JS stuff.
+**Today's Progress**: Reaffirming some basic JS stuff with codecademy projects.
 
 **Notes**: Continued from yesterday with building a credit card number validator. It's done now, but it took almost a total of a 100 minutes! Continued with another project, which is also taking me a while, but feel like I'm (re)learning a lot.
+
+
+### Day 96: July 14, 2020 
+#### 133 minutes
+##### Codecademy Basic JS Projects  
+
+**Today's Progress**: Reaffirming some basic JS stuff with codecademy projects.
+
+**Notes**: Finished the 'mysterious organism' factory function project I started yesterday. Enjoyed the challenge. Did a little more expressJS, which I didn't enjoy, and then started the git course simply cause I was bored. Might not finish it, but it would be helpful to have a better command of git in future. 
+
+Use Git commands to help keep track of changes made to a project:
+git init creates a new Git repository
+git status inspects the contents of the working directory and staging area
+git add adds files from the working directory to the staging area
+git diff shows the difference between the working directory and the staging area
+git commit permanently stores file changes from the staging area in the repository
+git log shows a list of all previous commits
