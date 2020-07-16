@@ -2001,9 +2001,44 @@ Run npm run build whenever you want to transpile your code from your src to lib 
 **Notes**: Finished the 'mysterious organism' factory function project I started yesterday. Enjoyed the challenge. Did a little more expressJS, which I didn't enjoy, and then started the git course simply cause I was bored. Might not finish it, but it would be helpful to have a better command of git in future. 
 
 Use Git commands to help keep track of changes made to a project:
-git init creates a new Git repository
-git status inspects the contents of the working directory and staging area
-git add adds files from the working directory to the staging area
-git diff shows the difference between the working directory and the staging area
-git commit permanently stores file changes from the staging area in the repository
-git log shows a list of all previous commits
+- git init creates a new Git repository
+- git status inspects the contents of the working directory and staging area
+- git add adds files from the working directory to the staging area
+- git add . adds all files to staging area
+- git diff shows the difference between the working directory and the staging area
+- git commit permanently stores file changes from the staging area in the repository
+- git log shows a list of all previous commits
+
+
+### Day 97: July 15, 2020 
+#### 60 minutes
+##### Codecademy Git course
+
+**Today's Progress**: Finished the git course I started on a whim yesterday. Also did a very simple bugfixing kata on codewars.
+
+**Notes**: Continued from day 96.
+
+- git checkout HEAD filename: Discards changes in the working directory.
+- git reset HEAD filename: Unstages file changes in the staging area.
+- git reset commit_SHA: Resets to a previous commit in your commit history.
+
+- git branch: Lists all a Git project’s branches.
+- git branch branch_name: Creates a new branch.
+- git checkout branch_name: Used to switch from one branch to another.
+- git merge branch_name: Used to join file changes from one branch to another.
+- git branch -d branch_name: Deletes the branch specified.
+
+- git clone: Creates a local copy of a remote.
+- git remote -v: Lists a Git project’s remotes.
+- git fetch: Fetches work from the remote into the local copy.
+- git merge origin/master: Merges origin/master into your local branch.
+- git push origin <branch_name>: Pushes a local branch to the origin remote.
+
+
+### Day 98: July 16, 2020 
+#### 85 minutes
+##### Codecademy React I Course
+
+**Today's Progress**: Started the react course
+
+**Notes**: Finally started on React, which was the main reason I wanted to do 100 days of code, so that's exciting. Hopefully all my mostly vanilla JS studying will help me in this endeavour.
