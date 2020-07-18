@@ -2042,3 +2042,16 @@ Use Git commands to help keep track of changes made to a project:
 **Today's Progress**: Started the react course
 
 **Notes**: Finally started on React, which was the main reason I wanted to do 100 days of code, so that's exciting. Hopefully all my mostly vanilla JS studying will help me in this endeavour.
+
+
+
+## MISSED A DAY DUE TO CODECADEMY BEING DOWN (Correction: It's cloudflare having a flare up, which has tanked like half the internet)
+
+
+### Day 99: July 18, 2020 
+#### 88 minutes
+##### Codecademy React I Course
+
+**Today's Progress**: Continued react course.
+
+**Notes**: Did a few components, notes are in the files.
