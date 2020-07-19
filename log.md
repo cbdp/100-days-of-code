@@ -1918,7 +1918,7 @@ See learning.js and basics.js in Codecademy/Phaser JS for more details and the c
 
 **Today's Progress**: Continued PhaserJS lessons.
 
-**Notes**: Nothing much to say. Learning about animations right now. I can't decide if learning phaserJS is a waste of time or not, it's not likely to be at all relevant in the future, but there are some basic JS things like objects, classes, etc., which I refresh while doing it, so hopefully that weigh up.
+**Notes**: Nothing much to say. Learning about animations right now. I can't decide if learning phaserJS is a waste of time or not, it's not likely to be at all relevant in the future, but there are some basic JS things like objects, classes, etc., which I refresh while doing it, so hopefully that'll weigh up.
 
 
 ### Day 91: July 9, 2020 
@@ -2055,3 +2055,12 @@ Use Git commands to help keep track of changes made to a project:
 **Today's Progress**: Continued react course.
 
 **Notes**: Did a few components, notes are in the files.
+
+
+### Day 100: July 19, 2020 
+#### 72 minutes
+##### Codecademy React I Course
+
+**Today's Progress**: Continued react course
+
+**Notes**: Day 100, wow! I am by no means done, so I think what I'll do is I'll stick with it until the react course I and II is done. Or at least until my codecademy pro account runs out, which should be soon.
