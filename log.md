@@ -2045,7 +2045,7 @@ Use Git commands to help keep track of changes made to a project:
 
 
 
-## MISSED A DAY DUE TO CODECADEMY BEING DOWN (Correction: It's cloudflare having a flare up, which has tanked like half the internet)
+## MISSED A DAY DUE TO CODECADEMY BEING DOWN
 
 
 ### Day 99: July 18, 2020 
@@ -2054,7 +2054,7 @@ Use Git commands to help keep track of changes made to a project:
 
 **Today's Progress**: Continued react course.
 
-**Notes**: Did a few components, notes are in the files.
+**Notes**: Did a few components, notes are in the files. Correction from yesterdays blip: It's cloudflare having a flare up, which tanked like half the internet.
 
 
 ### Day 100: July 19, 2020 
