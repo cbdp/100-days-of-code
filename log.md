@@ -2039,7 +2039,7 @@ Use Git commands to help keep track of changes made to a project:
 #### 85 minutes
 ##### Codecademy React I Course
 
-**Today's Progress**: Started the react course
+**Today's Progress**: Started the React I course
 
 **Notes**: Finally started on React, which was the main reason I wanted to do 100 days of code, so that's exciting. Hopefully all my mostly vanilla JS studying will help me in this endeavour.
 
@@ -2052,7 +2052,7 @@ Use Git commands to help keep track of changes made to a project:
 #### 88 minutes
 ##### Codecademy React I Course
 
-**Today's Progress**: Continued react course.
+**Today's Progress**: Continued React I course.
 
 **Notes**: Did a few components, notes are in the files. Correction from yesterdays blip: It's cloudflare having a flare up, which tanked like half the internet.
 
@@ -2061,6 +2061,15 @@ Use Git commands to help keep track of changes made to a project:
 #### 72 minutes
 ##### Codecademy React I Course
 
-**Today's Progress**: Continued react course
+**Today's Progress**: Continued React I course
 
 **Notes**: Day 100, wow! I am by no means done, so I think what I'll do is I'll stick with it until the react course I and II is done. Or at least until my codecademy pro account runs out, which should be soon.
+
+
+### Day 101: July 20, 2020 
+#### 95 minutes
+##### Codecademy React I Course
+
+**Today's Progress**: Finished the React I course.
+
+**Notes**: Notes in the files again. Will start on React II course next.
