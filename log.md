@@ -2077,7 +2077,7 @@ Use Git commands to help keep track of changes made to a project:
 
 
 ### Day 102: July 21, 2020 
-#### 80 minutes
+#### 100 minutes
 ##### Codecademy React II Course
 
 **Today's Progress**: Started the React II course.
@@ -2198,4 +2198,4 @@ The Pattern in full here, refer to comments above to see the specific code:
 - The stateless component class uses this new function as an event handler. (Child.js). When an event is detected, the parent’s state updates. 
 - The stateful component class passes down its state, distinct from the ability to change its state, to a different stateless component. (Parent.js)
 - That stateless component class receives the state and displays it. (Sibling.js)
-- An instance of the stateful component class is rendered. One stateless child component displays the state, and a different stateless child component displays a way to change the state. (Parent.js)*/
+- An instance of the stateful component class is rendered. One stateless child component displays the state, and a different stateless child component displays a way to change the state. (Parent.js)
